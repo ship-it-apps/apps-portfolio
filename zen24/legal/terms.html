@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen24 - Terms of Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fff;
+            color: #1a1a2e;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .updated {
+            color: #6c757d;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        ul {
+            margin: 8px 0 16px 24px;
+        }
+
+        li {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 6px;
+        }
+
+        a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+
+        .lang-switch {
+            position: fixed;
+            top: 12px;
+            right: 12px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            padding: 4px;
+            font-size: 13px;
+            display: flex;
+            gap: 2px;
+            z-index: 10;
+        }
+
+        .lang-switch button {
+            border: none;
+            background: none;
+            padding: 4px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .lang-switch button.active {
+            background: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switch">
+        <button id="btn-fr" onclick="setLang('fr')">FR</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+        <button id="btn-de" onclick="setLang('de')">DE</button>
+        <button id="btn-es" onclick="setLang('es')">ES</button>
+        <button id="btn-pt" onclick="setLang('pt')">PT</button>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back" id="back-link">&larr; Back</a>
+
+        <!-- FRENCH VERSION -->
+        <div id="lang-fr" class="lang-section">
+            <h1>Conditions d'utilisation</h1>
+            <p class="updated">Derni&egrave;re mise &agrave; jour : 2 mars 2026</p>
+
+            <h2>1. Acceptation des conditions</h2>
+            <p>En t&eacute;l&eacute;chargeant, installant ou utilisant l'application Zen24, vous acceptez d'&ecirc;tre li&eacute; par les pr&eacute;sentes conditions d'utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser l'application.</p>
+
+            <h2>2. Description du service</h2>
+            <p>Zen24 est une application iOS de gestion de propri&eacute;t&eacute;s et de r&eacute;servations. Elle permet aux h&ocirc;tes et gestionnaires de propri&eacute;t&eacute;s de :</p>
+            <ul>
+                <li>Visualiser et g&eacute;rer leurs r&eacute;servations via l'API Beds24.</li>
+                <li>Suivre les check-in et check-out de leurs propri&eacute;t&eacute;s.</li>
+                <li>Consulter les statistiques et indicateurs de performance.</li>
+                <li>G&eacute;rer la disponibilit&eacute; de leurs h&eacute;bergements.</li>
+            </ul>
+
+            <h2>3. Abonnements et paiements</h2>
+            <p>Zen24 propose les abonnements auto-renouvelables suivants :</p>
+            <ul>
+                <li><strong>Premium Mensuel</strong> : 6,99 &euro; par mois.</li>
+                <li><strong>Premium Annuel</strong> : 79,99 &euro; par an.</li>
+            </ul>
+            <p><strong>Essai gratuit :</strong> Un essai gratuit de 7 jours est disponible pour les nouveaux utilisateurs. Aucun paiement ne sera pr&eacute;lev&eacute; pendant la p&eacute;riode d'essai.</p>
+            <p><strong>Renouvellement automatique :</strong> L'abonnement se renouvelle automatiquement &agrave; la fin de chaque p&eacute;riode, sauf si vous l'annulez au moins 24 heures avant la date de renouvellement.</p>
+            <p><strong>Annulation :</strong> Vous pouvez annuler votre abonnement &agrave; tout moment depuis les r&eacute;glages de votre appareil Apple (R&eacute;glages > [votre nom] > Abonnements).</p>
+            <p><strong>Paiement :</strong> Le paiement est effectu&eacute; via votre compte Apple ID.</p>
+
+            <h2>4. Compte utilisateur</h2>
+            <p>Vous &ecirc;tes responsable de la confidentialit&eacute; de vos identifiants de connexion et de toute activit&eacute; r&eacute;alis&eacute;e sous votre compte.</p>
+
+            <h2>5. Connexion Beds24</h2>
+            <p>L'application se connecte &agrave; votre compte Beds24 via le protocole OAuth. Vous autorisez Zen24 &agrave; acc&eacute;der &agrave; vos donn&eacute;es Beds24 pour fournir les fonctionnalit&eacute;s du service. Vous pouvez r&eacute;voquer cet acc&egrave;s &agrave; tout moment depuis votre compte Beds24.</p>
+
+            <h2>6. Utilisation acceptable</h2>
+            <p>Vous vous engagez &agrave; ne pas :</p>
+            <ul>
+                <li>Tenter d'acc&eacute;der &agrave; des comptes d'autres utilisateurs.</li>
+                <li>Utiliser l'application &agrave; des fins ill&eacute;gales.</li>
+                <li>Tenter de contourner les mesures de s&eacute;curit&eacute;.</li>
+                <li>Reproduire ou distribuer l'application sans autorisation.</li>
+            </ul>
+
+            <h2>7. Propri&eacute;t&eacute; intellectuelle</h2>
+            <p>L'application Zen24, son design, son code source et son contenu sont prot&eacute;g&eacute;s par le droit de la propri&eacute;t&eacute; intellectuelle.</p>
+
+            <h2>8. Limitation de responsabilit&eacute;</h2>
+            <p>Zen24 est fourni &laquo; en l'&eacute;tat &raquo;. Nous ne garantissons pas que le service sera ininterrompu. Nous ne sommes pas responsables des dommages r&eacute;sultant de l'utilisation de l'application.</p>
+
+            <h2>9. CLUF Apple</h2>
+            <p>L'utilisation de l'application est &eacute;galement r&eacute;gie par le <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Contrat de Licence Utilisateur Final (CLUF) standard d'Apple</a>.</p>
+
+            <h2>10. Suppression de compte</h2>
+            <p>Vous pouvez supprimer votre compte &agrave; tout moment depuis les param&egrave;tres de l'application.</p>
+
+            <h2>11. Droit applicable</h2>
+            <p>Les pr&eacute;sentes conditions sont r&eacute;gies par le droit fran&ccedil;ais. Tout litige sera soumis aux tribunaux comp&eacute;tents de Paris, France.</p>
+
+            <h2>12. Contact</h2>
+            <p>Pour toute question : <a href="mailto:support@zen24.app">support@zen24.app</a></p>
+        </div>
+
+        <!-- ENGLISH VERSION -->
+        <div id="lang-en" class="lang-section">
+            <h1>Terms of Service</h1>
+            <p class="updated">Last updated: March 2, 2026</p>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>By downloading, installing, or using the Zen24 application, you agree to be bound by these terms of service. If you do not accept these terms, please do not use the application.</p>
+
+            <h2>2. Service Description</h2>
+            <p>Zen24 is an iOS property and booking management application. It allows hosts and property managers to:</p>
+            <ul>
+                <li>View and manage their bookings via the Beds24 API.</li>
+                <li>Track check-ins and check-outs for their properties.</li>
+                <li>View statistics and performance indicators.</li>
+                <li>Manage the availability of their accommodations.</li>
+            </ul>
+
+            <h2>3. Subscriptions and Payments</h2>
+            <p>Zen24 offers the following auto-renewable subscriptions:</p>
+            <ul>
+                <li><strong>Monthly Premium</strong>: &euro;6.99 per month.</li>
+                <li><strong>Yearly Premium</strong>: &euro;79.99 per year.</li>
+            </ul>
+            <p><strong>Free trial:</strong> A 7-day free trial is available for new users. No payment will be charged during the trial period.</p>
+            <p><strong>Auto-renewal:</strong> The subscription automatically renews at the end of each period unless you cancel at least 24 hours before the renewal date.</p>
+            <p><strong>Cancellation:</strong> You can cancel your subscription at any time from your Apple device settings (Settings > [your name] > Subscriptions).</p>
+            <p><strong>Payment:</strong> Payment is processed through your Apple ID account.</p>
+
+            <h2>4. User Account</h2>
+            <p>You are responsible for maintaining the confidentiality of your login credentials and for all activities under your account.</p>
+
+            <h2>5. Beds24 Connection</h2>
+            <p>The application connects to your Beds24 account via the OAuth protocol. You authorize Zen24 to access your Beds24 data to provide the service features. You can revoke this access at any time from your Beds24 account.</p>
+
+            <h2>6. Acceptable Use</h2>
+            <p>You agree not to:</p>
+            <ul>
+                <li>Attempt to access other users' accounts.</li>
+                <li>Use the application for illegal purposes.</li>
+                <li>Attempt to circumvent security measures.</li>
+                <li>Reproduce or distribute the application without authorization.</li>
+            </ul>
+
+            <h2>7. Intellectual Property</h2>
+            <p>The Zen24 application, its design, source code, and content are protected by intellectual property law.</p>
+
+            <h2>8. Limitation of Liability</h2>
+            <p>Zen24 is provided "as is". We do not guarantee uninterrupted service. We are not liable for damages resulting from the use of the application.</p>
+
+            <h2>9. Apple EULA</h2>
+            <p>Use of the application is also governed by <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's Standard End User License Agreement (EULA)</a>.</p>
+
+            <h2>10. Account Deletion</h2>
+            <p>You can delete your account at any time from the application settings.</p>
+
+            <h2>11. Governing Law</h2>
+            <p>These terms are governed by French law. Any dispute shall be submitted to the competent courts of Paris, France.</p>
+
+            <h2>12. Contact</h2>
+            <p>For any questions: <a href="mailto:support@zen24.app">support@zen24.app</a></p>
+        </div>
+
+        <!-- GERMAN VERSION -->
+        <div id="lang-de" class="lang-section">
+            <h1>Nutzungsbedingungen</h1>
+            <p class="updated">Letzte Aktualisierung: 2. M&auml;rz 2026</p>
+
+            <h2>1. Annahme der Bedingungen</h2>
+            <p>Durch das Herunterladen, Installieren oder Nutzen der Zen24-Anwendung erkl&auml;ren Sie sich mit diesen Nutzungsbedingungen einverstanden.</p>
+
+            <h2>2. Dienstbeschreibung</h2>
+            <p>Zen24 ist eine iOS-Anwendung zur Immobilien- und Buchungsverwaltung. Sie erm&ouml;glicht Gastgebern und Immobilienverwaltern:</p>
+            <ul>
+                <li>Buchungen &uuml;ber die Beds24-API anzuzeigen und zu verwalten.</li>
+                <li>Check-ins und Check-outs ihrer Immobilien zu verfolgen.</li>
+                <li>Statistiken und Leistungsindikatoren einzusehen.</li>
+                <li>Die Verf&uuml;gbarkeit ihrer Unterk&uuml;nfte zu verwalten.</li>
+            </ul>
+
+            <h2>3. Abonnements und Zahlungen</h2>
+            <p>Zen24 bietet folgende automatisch verl&auml;ngerbare Abonnements an:</p>
+            <ul>
+                <li><strong>Monatlich Premium</strong>: 6,99 &euro; pro Monat.</li>
+                <li><strong>J&auml;hrlich Premium</strong>: 79,99 &euro; pro Jahr.</li>
+            </ul>
+            <p><strong>Kostenlose Testversion:</strong> Eine 7-t&auml;gige kostenlose Testversion ist f&uuml;r neue Benutzer verf&uuml;gbar.</p>
+            <p><strong>Automatische Verl&auml;ngerung:</strong> Das Abonnement verl&auml;ngert sich automatisch, sofern Sie es nicht mindestens 24 Stunden vor dem Verl&auml;ngerungsdatum k&uuml;ndigen.</p>
+            <p><strong>K&uuml;ndigung:</strong> Sie k&ouml;nnen Ihr Abonnement jederzeit &uuml;ber die Einstellungen Ihres Apple-Ger&auml;ts k&uuml;ndigen (Einstellungen > [Ihr Name] > Abonnements).</p>
+            <p><strong>Zahlung:</strong> Die Zahlung erfolgt &uuml;ber Ihr Apple-ID-Konto.</p>
+
+            <h2>4. Benutzerkonto</h2>
+            <p>Sie sind f&uuml;r die Vertraulichkeit Ihrer Anmeldedaten und alle Aktivit&auml;ten unter Ihrem Konto verantwortlich.</p>
+
+            <h2>5. Beds24-Verbindung</h2>
+            <p>Die Anwendung verbindet sich &uuml;ber das OAuth-Protokoll mit Ihrem Beds24-Konto. Sie k&ouml;nnen diesen Zugriff jederzeit in Ihrem Beds24-Konto widerrufen.</p>
+
+            <h2>6. Akzeptable Nutzung</h2>
+            <p>Sie verpflichten sich, nicht:</p>
+            <ul>
+                <li>Auf Konten anderer Benutzer zuzugreifen.</li>
+                <li>Die Anwendung f&uuml;r illegale Zwecke zu nutzen.</li>
+                <li>Sicherheitsma&szlig;nahmen zu umgehen.</li>
+                <li>Die Anwendung ohne Genehmigung zu reproduzieren oder zu verbreiten.</li>
+            </ul>
+
+            <h2>7. Geistiges Eigentum</h2>
+            <p>Die Zen24-Anwendung, ihr Design, Quellcode und Inhalt sind durch das Recht des geistigen Eigentums gesch&uuml;tzt.</p>
+
+            <h2>8. Haftungsbeschr&auml;nkung</h2>
+            <p>Zen24 wird &bdquo;wie besehen&ldquo; bereitgestellt. Wir garantieren keinen ununterbrochenen Service.</p>
+
+            <h2>9. Apple EULA</h2>
+            <p>Die Nutzung der Anwendung unterliegt auch <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apples Standard-Endbenutzer-Lizenzvereinbarung (EULA)</a>.</p>
+
+            <h2>10. Kontol&ouml;schung</h2>
+            <p>Sie k&ouml;nnen Ihr Konto jederzeit &uuml;ber die App-Einstellungen l&ouml;schen.</p>
+
+            <h2>11. Anwendbares Recht</h2>
+            <p>Diese Bedingungen unterliegen franz&ouml;sischem Recht.</p>
+
+            <h2>12. Kontakt</h2>
+            <p>Bei Fragen: <a href="mailto:support@zen24.app">support@zen24.app</a></p>
+        </div>
+
+        <!-- SPANISH VERSION -->
+        <div id="lang-es" class="lang-section">
+            <h1>Condiciones de uso</h1>
+            <p class="updated">&Uacute;ltima actualizaci&oacute;n: 2 de marzo de 2026</p>
+
+            <h2>1. Aceptaci&oacute;n de las condiciones</h2>
+            <p>Al descargar, instalar o utilizar la aplicaci&oacute;n Zen24, acepta estar sujeto a estas condiciones de uso.</p>
+
+            <h2>2. Descripci&oacute;n del servicio</h2>
+            <p>Zen24 es una aplicaci&oacute;n iOS de gesti&oacute;n de propiedades y reservas que permite a los anfitriones y gestores de propiedades:</p>
+            <ul>
+                <li>Ver y gestionar sus reservas a trav&eacute;s de la API de Beds24.</li>
+                <li>Hacer seguimiento de los check-in y check-out.</li>
+                <li>Consultar estad&iacute;sticas e indicadores de rendimiento.</li>
+                <li>Gestionar la disponibilidad de sus alojamientos.</li>
+            </ul>
+
+            <h2>3. Suscripciones y pagos</h2>
+            <p>Zen24 ofrece las siguientes suscripciones de renovaci&oacute;n autom&aacute;tica:</p>
+            <ul>
+                <li><strong>Premium Mensual</strong>: 6,99 &euro; al mes.</li>
+                <li><strong>Premium Anual</strong>: 79,99 &euro; al a&ntilde;o.</li>
+            </ul>
+            <p><strong>Prueba gratuita:</strong> Una prueba gratuita de 7 d&iacute;as est&aacute; disponible para nuevos usuarios.</p>
+            <p><strong>Renovaci&oacute;n autom&aacute;tica:</strong> La suscripci&oacute;n se renueva autom&aacute;ticamente a menos que la cancele al menos 24 horas antes de la fecha de renovaci&oacute;n.</p>
+            <p><strong>Cancelaci&oacute;n:</strong> Puede cancelar su suscripci&oacute;n en cualquier momento desde los ajustes de su dispositivo Apple (Ajustes > [su nombre] > Suscripciones).</p>
+            <p><strong>Pago:</strong> El pago se procesa a trav&eacute;s de su cuenta Apple ID.</p>
+
+            <h2>4. Cuenta de usuario</h2>
+            <p>Usted es responsable de mantener la confidencialidad de sus credenciales de inicio de sesi&oacute;n.</p>
+
+            <h2>5. Conexi&oacute;n Beds24</h2>
+            <p>La aplicaci&oacute;n se conecta a su cuenta Beds24 mediante el protocolo OAuth. Puede revocar este acceso en cualquier momento desde su cuenta Beds24.</p>
+
+            <h2>6. Uso aceptable</h2>
+            <p>Se compromete a no:</p>
+            <ul>
+                <li>Intentar acceder a cuentas de otros usuarios.</li>
+                <li>Usar la aplicaci&oacute;n con fines ilegales.</li>
+                <li>Intentar eludir las medidas de seguridad.</li>
+                <li>Reproducir o distribuir la aplicaci&oacute;n sin autorizaci&oacute;n.</li>
+            </ul>
+
+            <h2>7. Propiedad intelectual</h2>
+            <p>La aplicaci&oacute;n Zen24, su dise&ntilde;o, c&oacute;digo fuente y contenido est&aacute;n protegidos por la ley de propiedad intelectual.</p>
+
+            <h2>8. Limitaci&oacute;n de responsabilidad</h2>
+            <p>Zen24 se proporciona &laquo;tal cual&raquo;. No garantizamos un servicio ininterrumpido.</p>
+
+            <h2>9. EULA de Apple</h2>
+            <p>El uso de la aplicaci&oacute;n tambi&eacute;n se rige por el <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Acuerdo de Licencia de Usuario Final (EULA) est&aacute;ndar de Apple</a>.</p>
+
+            <h2>10. Eliminaci&oacute;n de cuenta</h2>
+            <p>Puede eliminar su cuenta en cualquier momento desde los ajustes de la aplicaci&oacute;n.</p>
+
+            <h2>11. Ley aplicable</h2>
+            <p>Estas condiciones se rigen por la ley francesa.</p>
+
+            <h2>12. Contacto</h2>
+            <p>Para cualquier pregunta: <a href="mailto:support@zen24.app">support@zen24.app</a></p>
+        </div>
+
+        <!-- PORTUGUESE VERSION -->
+        <div id="lang-pt" class="lang-section">
+            <h1>Termos de Uso</h1>
+            <p class="updated">&Uacute;ltima atualiza&ccedil;&atilde;o: 2 de mar&ccedil;o de 2026</p>
+
+            <h2>1. Aceita&ccedil;&atilde;o dos termos</h2>
+            <p>Ao baixar, instalar ou usar o aplicativo Zen24, voc&ecirc; concorda em estar vinculado a estes termos de uso.</p>
+
+            <h2>2. Descri&ccedil;&atilde;o do servi&ccedil;o</h2>
+            <p>Zen24 &eacute; um aplicativo iOS de gest&atilde;o de propriedades e reservas que permite a anfitri&otilde;es e gestores de propriedades:</p>
+            <ul>
+                <li>Visualizar e gerenciar suas reservas via a API do Beds24.</li>
+                <li>Acompanhar check-ins e check-outs de suas propriedades.</li>
+                <li>Consultar estat&iacute;sticas e indicadores de desempenho.</li>
+                <li>Gerenciar a disponibilidade de suas acomoda&ccedil;&otilde;es.</li>
+            </ul>
+
+            <h2>3. Assinaturas e pagamentos</h2>
+            <p>O Zen24 oferece as seguintes assinaturas com renova&ccedil;&atilde;o autom&aacute;tica:</p>
+            <ul>
+                <li><strong>Premium Mensal</strong>: &euro;6,99 por m&ecirc;s.</li>
+                <li><strong>Premium Anual</strong>: &euro;79,99 por ano.</li>
+            </ul>
+            <p><strong>Teste gr&aacute;tis:</strong> Um teste gr&aacute;tis de 7 dias est&aacute; dispon&iacute;vel para novos usu&aacute;rios.</p>
+            <p><strong>Renova&ccedil;&atilde;o autom&aacute;tica:</strong> A assinatura &eacute; renovada automaticamente, a menos que voc&ecirc; a cancele pelo menos 24 horas antes da data de renova&ccedil;&atilde;o.</p>
+            <p><strong>Cancelamento:</strong> Voc&ecirc; pode cancelar sua assinatura a qualquer momento nas configura&ccedil;&otilde;es do seu dispositivo Apple (Ajustes > [seu nome] > Assinaturas).</p>
+            <p><strong>Pagamento:</strong> O pagamento &eacute; processado atrav&eacute;s da sua conta Apple ID.</p>
+
+            <h2>4. Conta do usu&aacute;rio</h2>
+            <p>Voc&ecirc; &eacute; respons&aacute;vel por manter a confidencialidade de suas credenciais de login.</p>
+
+            <h2>5. Conex&atilde;o Beds24</h2>
+            <p>O aplicativo se conecta &agrave; sua conta Beds24 via protocolo OAuth. Voc&ecirc; pode revogar esse acesso a qualquer momento pela sua conta Beds24.</p>
+
+            <h2>6. Uso aceit&aacute;vel</h2>
+            <p>Voc&ecirc; concorda em n&atilde;o:</p>
+            <ul>
+                <li>Tentar acessar contas de outros usu&aacute;rios.</li>
+                <li>Usar o aplicativo para fins ilegais.</li>
+                <li>Tentar burlar as medidas de seguran&ccedil;a.</li>
+                <li>Reproduzir ou distribuir o aplicativo sem autoriza&ccedil;&atilde;o.</li>
+            </ul>
+
+            <h2>7. Propriedade intelectual</h2>
+            <p>O aplicativo Zen24, seu design, c&oacute;digo-fonte e conte&uacute;do s&atilde;o protegidos pela lei de propriedade intelectual.</p>
+
+            <h2>8. Limita&ccedil;&atilde;o de responsabilidade</h2>
+            <p>O Zen24 &eacute; fornecido "como est&aacute;". N&atilde;o garantimos servi&ccedil;o ininterrupto.</p>
+
+            <h2>9. EULA da Apple</h2>
+            <p>O uso do aplicativo tamb&eacute;m &eacute; regido pelo <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Contrato de Licen&ccedil;a de Usu&aacute;rio Final (EULA) padr&atilde;o da Apple</a>.</p>
+
+            <h2>10. Exclus&atilde;o de conta</h2>
+            <p>Voc&ecirc; pode excluir sua conta a qualquer momento nas configura&ccedil;&otilde;es do aplicativo.</p>
+
+            <h2>11. Lei aplic&aacute;vel</h2>
+            <p>Estes termos s&atilde;o regidos pela lei francesa.</p>
+
+            <h2>12. Contato</h2>
+            <p>Para qualquer d&uacute;vida: <a href="mailto:support@zen24.app">support@zen24.app</a></p>
+        </div>
+    </div>
+
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll('.lang-section').forEach(function(s) { s.classList.remove('active'); });
+            document.querySelectorAll('.lang-switch button').forEach(function(b) { b.classList.remove('active'); });
+            document.getElementById('lang-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+            var backTexts = {fr:'Retour',en:'Back',de:'Zur\u00fcck',es:'Volver',pt:'Voltar'};
+            document.getElementById('back-link').innerHTML = '&larr; ' + (backTexts[lang] || 'Back');
+        }
+        var params = new URLSearchParams(window.location.search);
+        var paramLang = (params.get('lang') || '').toLowerCase();
+        var userLang = paramLang || (navigator.language || 'en').toLowerCase();
+        if (userLang.startsWith('fr')) setLang('fr');
+        else if (userLang.startsWith('de')) setLang('de');
+        else if (userLang.startsWith('es')) setLang('es');
+        else if (userLang.startsWith('pt')) setLang('pt');
+        else setLang('en');
+    </script>
+</body>
+</html>
