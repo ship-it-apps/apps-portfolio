@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IK - Politique de confidentialité</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fff;
+            color: #1a1a2e;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .updated {
+            color: #6c757d;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        ul {
+            margin: 8px 0 16px 24px;
+        }
+
+        li {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 6px;
+        }
+
+        a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+
+        .lang-switch {
+            position: fixed;
+            top: 12px;
+            right: 12px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            padding: 4px;
+            font-size: 13px;
+            display: flex;
+            gap: 2px;
+            z-index: 10;
+        }
+
+        .lang-switch button {
+            border: none;
+            background: none;
+            padding: 4px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .lang-switch button.active {
+            background: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="back" href="index.html">← IK</a>
+        <h1>Politique de confidentialité</h1>
+        <p class="updated">Dernière mise à jour : 9 octobre 2026</p>
+
+        <h2>1. Introduction</h2>
+        <p>IK : Indemnités kilométriques (« nous », « l'application ») est une application iOS qui enregistre vos trajets professionnels et calcule vos frais kilométriques au barème fiscal, éditée par SHIP IT. Cette politique décrit les données traitées par l'application. En résumé : aucun compte, aucune publicité, aucun outil d'analyse, aucun suivi, et aucune donnée de trajet envoyée à un serveur.</p>
+
+        <h2>2. Données stockées sur l'appareil</h2>
+        <p>L'application enregistre uniquement sur votre appareil :</p>
+        <ul>
+            <li>vos véhicules (marque, modèle, motorisation, puissance fiscale) ;</li>
+            <li>vos trajets (date, départ et arrivée saisis en texte, distance, motif, véhicule, décision et justification pour la règle des 40 km) et vos trajets favoris ;</li>
+            <li>vos réglages et vos réponses à l'accueil (statut fiscal, kilométrage annuel estimé).</li>
+        </ul>
+        <p>Ces données ne sont jamais envoyées sur nos serveurs ni à des tiers. Elles sont supprimées par « Supprimer toutes mes données » (trajets et favoris) ou en désinstallant l'application. Les fichiers PDF et CSV que vous exportez sont partagés uniquement là où vous le choisissez.</p>
+
+        <h2>3. Localisation</h2>
+        <p>Pendant un trajet que vous démarrez, l'application utilise la localisation de l'iPhone pour mesurer la distance parcourue, y compris écran verrouillé. La localisation se coupe dès que vous arrêtez le trajet. Aucune position n'est conservée ni transmise : seule la distance totale est enregistrée.</p>
+
+        <h2>4. Calcul de distance par Plans</h2>
+        <p>En saisie manuelle, l'application peut demander à Apple Plans (MapKit) la distance en voiture entre le départ et l'arrivée que vous avez tapés. Ces textes sont transmis à Apple pour ce calcul, selon la <a href="https://www.apple.com/legal/privacy/">politique de confidentialité d'Apple</a>. Vous pouvez aussi saisir la distance vous-même.</p>
+
+        <h2>5. Barème kilométrique</h2>
+        <p>L'application télécharge depuis notre site le barème fiscal en vigueur, pour le tenir à jour sans mise à jour de l'application. Cette requête ne contient aucune donnée personnelle.</p>
+
+        <h2>6. Notifications</h2>
+        <p>Si vous l'autorisez, l'application programme une notification locale pour vous rappeler la fin de l'essai gratuit. Elle est créée sur l'appareil : aucun jeton de notification n'est collecté.</p>
+
+        <h2>7. Données que nous ne collectons pas</h2>
+        <ul>
+            <li>Aucun compte ni identifiant de connexion, aucune adresse e-mail.</li>
+            <li>Aucun historique de positions, aucun contact, aucune photo.</li>
+            <li>Aucun outil d'analyse d'usage, aucune publicité, aucun identifiant publicitaire (IDFA).</li>
+        </ul>
+
+        <h2>8. Abonnements</h2>
+        <p>Les abonnements sont achetés et payés via l'App Store d'Apple. Nous ne recevons jamais vos informations de paiement. Pour vérifier qu'un abonnement est actif, l'application utilise <a href="https://www.revenuecat.com">RevenueCat</a>, notre prestataire de gestion des abonnements, qui reçoit :</p>
+        <ul>
+            <li>les informations de transaction de l'App Store (produit acheté, dates, statut de l'abonnement) ;</li>
+            <li>un identifiant anonyme généré par l'application, qui n'est lié à aucune identité ;</li>
+            <li>des informations techniques nécessaires au service (version de l'application et d'iOS, pays de l'App Store, adresse IP).</li>
+        </ul>
+        <p>Ces données servent uniquement à débloquer l'application et à restaurer les achats. Voir la <a href="https://www.revenuecat.com/privacy">politique de confidentialité de RevenueCat</a>.</p>
+
+        <h2>9. Partage des données</h2>
+        <p>Nous ne vendons ni ne partageons aucune donnée. Les seuls partenaires techniques sont Apple (distribution, paiements, calcul de distance par Plans) et RevenueCat (vérification des abonnements).</p>
+
+        <h2>10. Vos droits</h2>
+        <p>Conformément au RGPD, vous pouvez demander l'accès, la rectification ou la suppression des données d'abonnement associées à votre appareil en nous écrivant. Les données stockées sur l'appareil restent sous votre contrôle et sont supprimées avec l'application.</p>
+
+        <h2>11. Modifications</h2>
+        <p>Nous pouvons modifier cette politique. La date de dernière mise à jour figure en haut de cette page.</p>
+
+        <h2>12. Contact</h2>
+        <p>Pour toute question : <a href="mailto:contact@shipit.group">contact@shipit.group</a></p>
+    </div>
+</body>
+</html>
