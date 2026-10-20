@@ -1,144 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IK : Indemnités kilométriques — Trajets pros et barème fiscal</title>
-  <meta name="description" content="Suivez vos trajets professionnels et calculez vos indemnités kilométriques au barème fiscal, avec un PDF pour les impôts et un CSV pour le comptable. Sans compte, sans publicité.">
-  <meta name="theme-color" content="#F3F4F1">
-  <meta property="og:title" content="IK : Indemnités kilométriques">
-  <meta property="og:description" content="Vos trajets pros, calculés au barème officiel.">
-  <meta property="og:image" content="../assets/icons/ik.png">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../assets/icons/ik.png" type="image/png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IK — indemnités kilométriques au barème officiel sur iPhone</title>
+<meta name="description" content="IK suit vos trajets pros au GPS, calcule vos indemnités kilométriques au barème fiscal et exporte un PDF pour vos impôts et un CSV pour votre comptable.">
+<link rel="canonical" href="https://apps.shipit.group/ik/">
+<link rel="alternate" hreflang="fr" href="https://apps.shipit.group/ik/"><link rel="alternate" hreflang="x-default" href="https://apps.shipit.group/ik/">
+<script>(function(){var d=document.documentElement,L=d.lang,A={"fr": "/ik/"},S=['en','fr'];function g(){try{return localStorage.getItem('lang')}catch(e){return null}}function s(v){try{localStorage.setItem('lang',v)}catch(e){}}var q=(new URLSearchParams(location.search).get('lang')||'').slice(0,2).toLowerCase();if(q&&A[q]){s(q);if(q!==L)location.replace(A[q]);return}if(/bot|crawl|spider|slurp|lighthouse|preview/i.test(navigator.userAgent))return;var p=g();if(p){if(p!==L&&A[p])location.replace(A[p]);return}var n=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en']).map(function(x){return String(x).slice(0,2).toLowerCase()});var w='en';for(var i=0;i<n.length;i++){if(S.indexOf(n[i])>-1){w=n[i];break}}if(w!==L&&A[w])location.replace(A[w]);document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a[data-lang]');if(a)s(a.getAttribute('data-lang'))})})();</script>
+<meta name="theme-color" content="#F6F5F1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SHIP IT">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="IK — indemnités kilométriques au barème officiel sur iPhone">
+<meta property="og:description" content="IK suit vos trajets pros au GPS, calcule vos indemnités kilométriques au barème fiscal et exporte un PDF pour vos impôts et un CSV pour votre comptable.">
+<meta property="og:url" content="https://apps.shipit.group/ik/">
+<meta property="og:image" content="https://apps.shipit.group/assets/site/og/ik-fr.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6820927370">
+<link rel="preload" href="/assets/site/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/site/fonts/geist-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site/site.css">
+<style>:root{--strong:#2547B8;--bright:#F2B632;--tint:#DCE4FF;--wash:#EEF2FF;--deep:#101B45;--ondark:#F2B632;--mutedd:#C3CCEA;--bord:#2A3A75;--panel:linear-gradient(160deg,#2E52C9,#1D3A99);--inktint:#1D3A99}</style>
+<link rel="icon" href="/assets/site/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="SHIP IT" href="https://apps.shipit.group/fr/feed.xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "IK : Indemnités kilométriques", "operatingSystem": "iOS 18.0", "applicationCategory": "FinanceApplication", "description": "IK suit vos trajets pros au GPS, calcule vos indemnités kilométriques au barème fiscal et exporte un PDF pour vos impôts et un CSV pour votre comptable.", "url": "https://apps.shipit.group/ik/", "downloadUrl": "https://apps.apple.com/app/id6820927370", "image": "https://apps.shipit.group/assets/icons/ik.png", "inLanguage": "fr", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "publisher": {"@type": "Organization", "name": "SHIP IT", "url": "https://apps.shipit.group/", "email": "contact@shipit.group", "logo": "https://apps.shipit.group/assets/site/favicon.svg"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://apps.shipit.group/fr/"}, {"@type": "ListItem", "position": 2, "name": "IK", "item": "https://apps.shipit.group/ik/"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "À qui s’adresse IK ?", "acceptedAnswer": {"@type": "Answer", "text": "Aux salariés qui déclarent leurs frais réels et aux indépendants en BNC."}}, {"@type": "Question", "name": "Mes déplacements sont-ils suivis en permanence ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. La localisation n’est utilisée que pendant le trajet en cours."}}, {"@type": "Question", "name": "Quel barème IK utilise-t-elle ?", "acceptedAnswer": {"@type": "Answer", "text": "Le barème kilométrique fiscal en vigueur, par véhicule et sur le cumul annuel, avec le barème spécifique des véhicules 100 % électriques."}}, {"@type": "Question", "name": "IK remplace-t-elle un conseil fiscal ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. IK vous aide à calculer et documenter vos trajets ; elle ne constitue pas un conseil fiscal."}}]}</script>
 </head>
 <body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="site-header"><div class="wrap site-header__in">
+<a class="brand" href="/fr/" aria-label="SHIP IT"><span class="brand__mark" aria-hidden="true"></span><span class="brand__name">SHIP IT</span></a>
+<nav class="nav" aria-label="IK"><a href="#features">Fonctionnalités</a><a href="/ik/blog/">Blog</a><a href="#faq">FAQ</a><a class="btn-store" href="https://apps.apple.com/app/id6820927370">Télécharger</a></nav>
+</div></header>
+<main id="main">
+<nav class="wrap crumbs" aria-label="Fil d’Ariane"><ol><li><a href="/fr/">Accueil</a></li><li aria-current="page">IK</li></ol></nav>
+<section class="wrap app-hero" aria-labelledby="hero-t">
+<div class="app-hero__copy">
+<div class="app-hero__id"><img class="icon" src="/assets/icons/ik.png" alt="" width="72" height="72"><div><strong>IK : Indemnités kilométriques</strong><span>iPhone · iOS 18 et plus · Français</span></div></div>
+<h1 id="hero-t" class="h-display">Vos trajets pros, au barème officiel.</h1>
+<p class="lead">Un geste pour démarrer, un geste pour arrêter. IK calcule le montant déductible de vos trajets et prépare le PDF pour votre déclaration.</p>
+<div class="app-hero__cta"><a class="btn-appstore" href="https://apps.apple.com/app/id6820927370"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><small>Télécharger dans</small><strong>l’App Store</strong></span></a><span class="app-hero__price">Gratuit au téléchargement · abonnement · pour les salariés aux frais réels et les indépendants en BNC</span></div>
+</div>
+<figure class="device"><img src="/assets/site/img/fr/ik_1-bareme-officiel.webp" alt="Vos trajets pros au barème officiel" width="660" height="1434" fetchpriority="high"></figure>
+</section>
+<section class="sect" style="padding-top:0;overflow:hidden" aria-labelledby="shots-t"><div class="wrap">
+<div class="sect-head" style="margin-bottom:28px"><h2 id="shots-t" class="h3" style="font-size:clamp(28px,3vw,40px)">IK en images</h2><p class="muted" style="margin:0;font-size:15px">Faites défiler les captures de l’App Store</p></div>
+<ul class="shots"><li><img src="/assets/site/img/fr/ik_1-bareme-officiel.webp" alt="Vos trajets pros au barème officiel" width="660" height="1434" loading="lazy"></li><li><img src="/assets/site/img/fr/ik_2-un-tap.webp" alt="Un trajet en un tap" width="660" height="1434" loading="lazy"></li><li><img src="/assets/site/img/fr/ik_3-jusqua-4251.webp" alt="Jusqu’à 4 251 € déductibles (exemple 5 CV, 8 000 km)" width="660" height="1434" loading="lazy"></li><li><img src="/assets/site/img/fr/ik_4-pdf-impots.webp" alt="PDF prêt pour les impôts" width="660" height="1434" loading="lazy"></li><li><img src="/assets/site/img/fr/ik_5-vehicules.webp" alt="Plusieurs véhicules" width="660" height="1434" loading="lazy"></li><li><img src="/assets/site/img/fr/ik_6-alerte-40km.webp" alt="Alerte au-delà de 40 km" width="660" height="1434" loading="lazy"></li></ul>
+</div></section>
+<section id="features" class="sect sect--paper" aria-labelledby="feat-t"><div class="wrap">
+<p class="eyebrow">Fonctionnalités</p>
+<h2 id="feat-t" class="h2" style="margin-top:12px;max-width:18ch">Vos frais kilométriques, sans tableur.</h2>
+<div class="features"><div class="feature"><span class="feature__n" aria-hidden="true">01</span><h3 class="h3">Suivi GPS d’un geste</h3><p>Démarrez et arrêtez un trajet en un tap. La localisation ne sert que pendant le trajet en cours.</p></div><div class="feature"><span class="feature__n" aria-hidden="true">02</span><h3 class="h3">Favoris et saisie rapide</h3><p>Vos trajets habituels en un toucher ; saisie manuelle avec suggestions d’adresses et calcul de distance.</p></div><div class="feature"><span class="feature__n" aria-hidden="true">03</span><h3 class="h3">Barème officiel</h3><p>Montant calculé par véhicule et sur le cumul annuel, thermique ou 100 % électrique.</p></div><div class="feature"><span class="feature__n" aria-hidden="true">04</span><h3 class="h3">Règle des 40 km</h3><p>Au-delà de 40 km domicile-travail, justifiez la distance ou retenez 40 km.</p></div><div class="feature"><span class="feature__n" aria-hidden="true">05</span><h3 class="h3">Export PDF</h3><p>Récapitulatif annuel par véhicule, détail des trajets et formule utilisée.</p></div><div class="feature"><span class="feature__n" aria-hidden="true">06</span><h3 class="h3">Export CSV</h3><p>Dates, départs, arrivées, motifs, km parcourus et retenus, pour votre comptable.</p></div></div>
+</div></section>
+<section class="sect sect--deep" aria-labelledby="hl-t"><div class="wrap split">
+<div style="display:flex;flex-direction:column;gap:20px"><p class="eyebrow">Exemple</p><h2 id="hl-t" class="h2">Jusqu’à 4 251 € de frais déductibles.</h2><p style="margin:0;max-width:480px;font-size:18px;line-height:1.55;color:var(--mutedd)">Exemple affiché par l’app : véhicule thermique de 5 CV, 8 000 km professionnels dans l’année.</p></div>
+<dl class="stats"><div><dt>8 000 km</dt><dd>Parcourus dans l’année</dd></div><div><dt>× 0,357 + 1 395</dt><dd>Tranche 5 001 à 20 000 km</dd></div><div><dt>4 251 €</dt><dd>Déductibles</dd></div></dl>
+</div></section>
 
-  <nav class="nav animate-in">
-    <div class="container">
-      <div class="nav__inner">
-        <a href="../index.html" class="nav__back">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
-          Toutes les apps
-        </a>
-        <span class="nav__brand">IK</span>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <header class="app-hero">
-    <div class="container container--narrow">
-      <img src="../assets/icons/ik.png" alt="Icône de l’app IK" class="app-hero__icon animate-in">
-      <h1 class="display-lg app-hero__name animate-in animate-in-delay-1">IK : Indemnités kilométriques</h1>
-      <p class="app-hero__tagline animate-in animate-in-delay-2">
-        Vos trajets pros, calculés au barème officiel. Kilo compte vos kilomètres, IK prépare le PDF pour vos impôts.
-      </p>
-      <a href="https://apps.apple.com/app/id6820927370" class="app-hero__badge animate-in animate-in-delay-3" target="_blank" rel="noopener noreferrer" aria-label="Télécharger dans l’App Store">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="156" height="52">
-          <rect width="120" height="40" rx="6" fill="#000"/>
-          <text x="42.5" y="12.5" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="5.2" letter-spacing="0.02em">Télécharger dans</text>
-          <text x="42.5" y="24.5" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="11" font-weight="600" letter-spacing="-0.01em">l’App Store</text>
-          <g transform="translate(11, 5.5)" fill="#fff">
-            <path d="M18.87 14.48a5.22 5.22 0 0 1 2.49-4.38 5.35 5.35 0 0 0-4.21-2.28c-1.77-.19-3.49 1.06-4.39 1.06-.92 0-2.31-1.04-3.81-1.01a5.61 5.61 0 0 0-4.72 2.88c-2.04 3.52-.52 8.7 1.43 11.56.98 1.4 2.12 2.97 3.63 2.91 1.47-.06 2.02-.93 3.79-.93 1.76 0 2.27.93 3.8.9 1.57-.03 2.56-1.41 3.5-2.82a11.6 11.6 0 0 0 1.6-3.25 5.04 5.04 0 0 1-3.1-4.64ZM16.03 5.96A5.12 5.12 0 0 0 17.2 2.3a5.21 5.21 0 0 0-3.37 1.74 4.88 4.88 0 0 0-1.2 3.54 4.32 4.32 0 0 0 3.4-1.62Z"/>
-          </g>
-        </svg>
-      </a>
-    </div>
-  </header>
-
-  <!-- Features -->
-  <section class="features">
-    <div class="container">
-      <div class="features__header animate-in">
-        <div class="divider"></div>
-        <h2 class="display-md">Tout ce qu’il faut</h2>
-        <p class="text-soft" style="margin-top: 0.5rem;">Pour les salariés aux frais réels et les indépendants en BNC.</p>
-      </div>
-
-      <div class="features__grid">
-        <div class="feature-card animate-in animate-in-delay-1">
-          <span class="feature-card__icon">📍</span>
-          <h3 class="feature-card__title">Un trajet en un geste</h3>
-          <p class="feature-card__desc">Démarrez, roulez, arrêtez : la distance est mesurée au GPS. La localisation ne sert qu’au trajet en cours.</p>
-        </div>
-        <div class="feature-card animate-in animate-in-delay-2">
-          <span class="feature-card__icon">⭐️</span>
-          <h3 class="feature-card__title">Favoris et saisie rapide</h3>
-          <p class="feature-card__desc">Vos trajets habituels s’enregistrent d’un toucher. En saisie manuelle, Plans propose les adresses et calcule la distance.</p>
-        </div>
-        <div class="feature-card animate-in animate-in-delay-3">
-          <span class="feature-card__icon">🧮</span>
-          <h3 class="feature-card__title">Le barème officiel</h3>
-          <p class="feature-card__desc">Le montant déductible est calculé au barème kilométrique en vigueur, par véhicule et sur le cumul de l’année, thermique ou 100 % électrique.</p>
-        </div>
-        <div class="feature-card animate-in animate-in-delay-4">
-          <span class="feature-card__icon">🚦</span>
-          <h3 class="feature-card__title">La règle des 40 km</h3>
-          <p class="feature-card__desc">Au-delà de 40 km entre domicile et travail, IK vous demande de justifier la distance ou de n’en retenir que 40.</p>
-        </div>
-        <div class="feature-card animate-in animate-in-delay-5">
-          <span class="feature-card__icon">📄</span>
-          <h3 class="feature-card__title">PDF pour les impôts</h3>
-          <p class="feature-card__desc">Un récapitulatif par véhicule et par année, avec le détail des trajets et la formule du barème, prêt à conserver avec votre déclaration.</p>
-        </div>
-        <div class="feature-card animate-in animate-in-delay-5">
-          <span class="feature-card__icon">📊</span>
-          <h3 class="feature-card__title">CSV pour le comptable</h3>
-          <p class="feature-card__desc">Les mêmes trajets en tableau : dates, départs, arrivées, motifs, km parcourus et retenus.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Info Bar -->
-  <div class="info-bar animate-in">
-    <div class="container">
-      <div class="info-bar__inner">
-        <div class="info-bar__item">
-          <span class="info-bar__label">Prix</span>
-          <span class="info-bar__value">Gratuit &middot; Abonnement</span>
-        </div>
-        <div class="info-bar__item">
-          <span class="info-bar__label">Nécessite</span>
-          <span class="info-bar__value">iOS 18.0+</span>
-        </div>
-        <div class="info-bar__item">
-          <span class="info-bar__label">Langue</span>
-          <span class="info-bar__value">Français · France</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Links -->
-  <section class="links-section" style="padding-top: var(--space-2xl);">
-    <div class="container container--narrow">
-      <div class="links-section__header animate-in">
-        <div class="divider"></div>
-        <h2 class="display-md">Ressources</h2>
-      </div>
-
-      <div class="links-grid">
-        <a href="support.html" class="link-card animate-in animate-in-delay-1">
-          <span class="link-card__icon">🛟</span>
-          <span class="link-card__text">Assistance et FAQ</span>
-          <span class="link-card__arrow">&rarr;</span>
-        </a>
-        <a href="legal/index.html" class="link-card animate-in animate-in-delay-2">
-          <span class="link-card__icon">📄</span>
-          <span class="link-card__text">Confidentialité et conditions</span>
-          <span class="link-card__arrow">&rarr;</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <p class="footer__text">&copy; 2026 <a href="mailto:contact@shipit.group">SHIP IT</a>. Tous droits réservés. Ce n’est pas un conseil fiscal.</p>
-    </div>
-  </footer>
-
+<section class="sect" style="border-top:1px solid var(--line)" aria-labelledby="blog-t"><div class="wrap"><div class="sect-head"><h2 id="blog-t" class="h2" style="font-size:clamp(32px,3.8vw,52px)">Le blog IK</h2><a class="link-arrow" href="/ik/blog/">Tous les articles <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div><div class="mini-posts"><article class="mini-post"><span class="kind">Barème</span><h3 class="h3"><a href="/ik/blog/bareme-kilometrique-2026-calcul/">Barème kilométrique 2026 : calcul et exemple pour les frais réels</a></h3><p>Le barème kilométrique 2026 (revenus 2025) : formules par puissance fiscale, exemple 5 CV à 8 000 km, véhicules électriques et règle des 40 km.</p></article></div></div></section>
+<section id="faq" class="sect sect--paper" aria-labelledby="faq-t"><div class="wrap faq">
+<h2 id="faq-t" class="h2" style="font-size:clamp(32px,3.8vw,52px);margin-bottom:32px">Questions fréquentes</h2>
+<details><summary>À qui s’adresse IK ?</summary><p>Aux salariés qui déclarent leurs frais réels et aux indépendants en BNC.</p></details><details><summary>Mes déplacements sont-ils suivis en permanence ?</summary><p>Non. La localisation n’est utilisée que pendant le trajet en cours.</p></details><details><summary>Quel barème IK utilise-t-elle ?</summary><p>Le barème kilométrique fiscal en vigueur, par véhicule et sur le cumul annuel, avec le barème spécifique des véhicules 100 % électriques.</p></details><details><summary>IK remplace-t-elle un conseil fiscal ?</summary><p>Non. IK vous aide à calculer et documenter vos trajets ; elle ne constitue pas un conseil fiscal.</p></details>
+<p class="muted" style="margin:24px 0 0;font-size:15px">Une autre question ? Consultez <a href="https://apps.shipit.group/ik/support.html">le support IK</a>.</p>
+</div></section>
+<section class="wrap sect" aria-labelledby="cta-t">
+<div class="cta-panel"><h2 id="cta-t">Vos kilomètres valent de l’argent. Comptez-les.</h2><a class="btn btn--white" href="https://apps.apple.com/app/id6820927370">Télécharger IK</a></div>
+<p class="fineprint">IK est une application éditée par SHIP IT. Les informations fournies ne constituent pas un conseil fiscal.</p>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap footer-compact">
+<span>© 2026 SHIP IT · <a href="/fr/">Toutes nos apps</a> · <a href="/ik/blog/">Blog IK</a></span>
+<nav aria-label="IK"><a href="https://apps.shipit.group/ik/support.html">Support</a><a href="https://apps.shipit.group/ik/legal/privacy.html">Confidentialité</a><a href="https://apps.shipit.group/ik/legal/terms.html">Conditions d’utilisation</a><a href="/fr/mentions-legales/">Mentions légales</a><a href="mailto:contact@shipit.group">contact@shipit.group</a></nav>
+</div></footer>
 </body>
 </html>
