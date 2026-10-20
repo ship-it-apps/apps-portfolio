@@ -1,87 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SHIP IT — Apps</title>
-  <meta name="description" content="iOS apps crafted by SHIP IT. Thoughtfully designed tools for everyday life.">
-  <meta name="theme-color" content="#f6f5f1">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="assets/icons/zen24.png" type="image/png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHIP IT — iOS apps for everyday life</title>
+<meta name="description" content="SHIP IT builds focused iPhone apps: Zen24 for Beds24 hosts, Guitar Scale Quest, Mijo meal planner and IK mileage allowances.">
+<link rel="canonical" href="https://apps.shipit.group/">
+<link rel="alternate" hreflang="en" href="https://apps.shipit.group/"><link rel="alternate" hreflang="fr" href="https://apps.shipit.group/fr/"><link rel="alternate" hreflang="x-default" href="https://apps.shipit.group/">
+<script>(function(){var d=document.documentElement,L=d.lang,A={"en": "/", "fr": "/fr/"},S=['en','fr'];function g(){try{return localStorage.getItem('lang')}catch(e){return null}}function s(v){try{localStorage.setItem('lang',v)}catch(e){}}var q=(new URLSearchParams(location.search).get('lang')||'').slice(0,2).toLowerCase();if(q&&A[q]){s(q);if(q!==L)location.replace(A[q]);return}if(/bot|crawl|spider|slurp|lighthouse|preview/i.test(navigator.userAgent))return;var p=g();if(p){if(p!==L&&A[p])location.replace(A[p]);return}var n=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en']).map(function(x){return String(x).slice(0,2).toLowerCase()});var w='en';for(var i=0;i<n.length;i++){if(S.indexOf(n[i])>-1){w=n[i];break}}if(w!==L&&A[w])location.replace(A[w]);document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a[data-lang]');if(a)s(a.getAttribute('data-lang'))})})();</script>
+<meta name="theme-color" content="#F6F5F1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SHIP IT">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="SHIP IT — iOS apps for everyday life">
+<meta property="og:description" content="SHIP IT builds focused iPhone apps: Zen24 for Beds24 hosts, Guitar Scale Quest, Mijo meal planner and IK mileage allowances.">
+<meta property="og:url" content="https://apps.shipit.group/">
+<meta property="og:image" content="https://apps.shipit.group/assets/site/og/home-en.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/assets/site/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/site/fonts/geist-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site/site.css">
+
+<link rel="icon" href="/assets/site/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="SHIP IT" href="https://apps.shipit.group/feed.xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SHIP IT", "url": "https://apps.shipit.group/", "email": "contact@shipit.group", "logo": "https://apps.shipit.group/assets/site/favicon.svg"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "SHIP IT", "url": "https://apps.shipit.group/", "inLanguage": "en"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://apps.shipit.group/zen24/", "name": "Zen24"}, {"@type": "ListItem", "position": 2, "url": "https://apps.shipit.group/scalequest/", "name": "Guitar Scale Quest"}, {"@type": "ListItem", "position": 3, "url": "https://apps.shipit.group/mijo/", "name": "Mijo"}, {"@type": "ListItem", "position": 4, "url": "https://apps.shipit.group/ik/", "name": "IK"}]}</script>
 </head>
 <body>
-
-  <nav class="nav animate-in">
-    <div class="container">
-      <div class="nav__inner">
-        <span class="nav__brand">SHIP IT</span>
-      </div>
-    </div>
-  </nav>
-
-  <header class="home-hero">
-    <div class="container">
-      <span class="home-hero__label animate-in animate-in-delay-1">iOS Apps Portfolio</span>
-      <h1 class="display-xl home-hero__title animate-in animate-in-delay-2">Our Apps</h1>
-      <p class="home-hero__subtitle animate-in animate-in-delay-3">
-        Thoughtfully crafted iOS apps for everyday life.
-      </p>
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-      <div class="app-grid">
-
-        <a href="zen24/index.html" class="app-card animate-in animate-in-delay-4">
-          <img src="assets/icons/zen24.png" alt="Zen24 app icon" class="app-card__icon">
-          <div class="app-card__info">
-            <h2 class="app-card__name">Zen24</h2>
-            <p class="app-card__tagline">Manage your Beds24 properties from your iPhone</p>
-          </div>
-        </a>
-
-        <a href="scalequest/index.html" class="app-card animate-in animate-in-delay-5">
-          <img src="assets/icons/scalequest.png" alt="Guitar Scale Quest app icon" class="app-card__icon">
-          <div class="app-card__info">
-            <h2 class="app-card__name">Guitar Scale Quest</h2>
-            <p class="app-card__tagline">Master guitar scales with real-time pitch detection</p>
-          </div>
-        </a>
-
-        <a href="pip/index.html" class="app-card animate-in animate-in-delay-5">
-          <img src="assets/icons/pip.png" alt="Pip Coloring app icon" class="app-card__icon">
-          <div class="app-card__info">
-            <h2 class="app-card__name">Pip Coloring</h2>
-            <p class="app-card__tagline">Quiet-time coloring for kids, offline</p>
-          </div>
-        </a>
-
-        <a href="mijo/index.html" class="app-card animate-in animate-in-delay-5">
-          <img src="assets/icons/mijo.png" alt="Mijo app icon" class="app-card__icon">
-          <div class="app-card__info">
-            <h2 class="app-card__name">Mijo</h2>
-            <p class="app-card__tagline">The week's dinners and grocery list, in 30 seconds</p>
-          </div>
-        </a>
-
-        <a href="ik/index.html" class="app-card animate-in animate-in-delay-5">
-          <img src="assets/icons/ik.png" alt="IK app icon" class="app-card__icon">
-          <div class="app-card__info">
-            <h2 class="app-card__name">IK : Indemnités kilométriques</h2>
-            <p class="app-card__tagline">Business mileage tracking for French tax returns</p>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p class="footer__text">&copy; 2026 <a href="mailto:contact@shipit.group">SHIP IT</a>. All rights reserved.</p>
-    </div>
-  </footer>
-
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap site-header__in">
+<a class="brand" href="/" aria-label="SHIP IT"><span class="brand__mark" aria-hidden="true"></span><span class="brand__name">SHIP IT</span></a>
+<nav class="nav" aria-label="Navigation"><a href="/#apps">Apps</a><a href="/#journal">Journal</a><a href="/#studio">Studio</a><a class="btn-store" href="mailto:contact@shipit.group">Contact us</a><div class="lang" role="group" aria-label="Language"><a href="/" hreflang="en" lang="en" data-lang="en" aria-current="true">EN</a><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">FR</a></div></nav>
+</div></header>
+<main id="main">
+<section class="wrap home-hero" aria-labelledby="hero-t">
+<p class="dot-label">Independent studio · iOS apps</p>
+<h1 id="hero-t" class="h-display">Apps that do one thing. Really well.</h1>
+<div class="home-hero__row"><p class="lead">Run your Beds24 rentals, learn guitar scales, plan the week’s dinners, claim your mileage. iPhone apps, each built for a single job.</p><div style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn btn--ink" href="#apps">See our apps <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn btn--ghost" href="#journal">Read the journal</a></div></div>
+<div class="icon-row" aria-hidden="true"><img class="icon" src="/assets/icons/zen24.png" alt="" width="120" height="120"><img class="icon" src="/assets/icons/scalequest.png" alt="" width="120" height="120"><img class="icon" src="/assets/icons/mijo.png" alt="" width="120" height="120"><img class="icon" src="/assets/icons/ik.png" alt="" width="120" height="120"></div>
+</section>
+<section id="apps" class="apps" aria-labelledby="apps-t"><div class="wrap sect">
+<div class="apps__head"><h2 id="apps-t" class="h2">Our apps</h2><p class="eyebrow" style="color:var(--dark-muted)">iPhone · iOS 18 or later</p></div>
+<ul class="apps__list"><li><a class="app-row" href="/zen24/">
+<div class="app-row__id"><span class="app-row__num">01</span><img class="icon" src="/assets/icons/zen24.png" alt="" width="64" height="64"><span><span class="app-row__name">Zen24</span><span class="app-row__cat">Property management · Beds24</span></span></div>
+<p class="app-row__line">Arrivals, calendar, messages and KPIs for your Beds24 properties, in your pocket.</p>
+<div class="app-row__meta"><span style="display:flex;flex-wrap:wrap;gap:8px"><span class="pill-dark">Free · Premium</span><span class="pill-dark">5 languages</span></span><span class="app-row__go">Discover <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+</a></li><li><a class="app-row" href="/scalequest/">
+<div class="app-row__id"><span class="app-row__num">02</span><img class="icon" src="/assets/icons/scalequest.png" alt="" width="64" height="64"><span><span class="app-row__name">Guitar Scale Quest</span><span class="app-row__cat">Music · Learning</span></span></div>
+<p class="app-row__line">Master guitar scales with real-time note detection.</p>
+<div class="app-row__meta"><span style="display:flex;flex-wrap:wrap;gap:8px"><span class="pill-dark">Free · Pro</span><span class="pill-dark">3 languages</span></span><span class="app-row__go">Discover <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+</a></li><li><a class="app-row" href="/mijo/">
+<div class="app-row__id"><span class="app-row__num">03</span><img class="icon" src="/assets/icons/mijo.png" alt="" width="64" height="64"><span><span class="app-row__name">Mijo</span><span class="app-row__cat">Food · Meal planning</span></span></div>
+<p class="app-row__line">The week’s dinners and the grocery list, ready in 30 seconds.</p>
+<div class="app-row__meta"><span style="display:flex;flex-wrap:wrap;gap:8px"><span class="pill-dark">Free · Subscription</span><span class="pill-dark">5 languages</span></span><span class="app-row__go">Discover <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+</a></li><li><a class="app-row" href="/ik/" hreflang="fr">
+<div class="app-row__id"><span class="app-row__num">04</span><img class="icon" src="/assets/icons/ik.png" alt="" width="64" height="64"><span><span class="app-row__name">IK — French mileage allowances</span><span class="app-row__cat">Finance · French tax</span></span></div>
+<p class="app-row__line">Business trips tracked by GPS and computed with the official French mileage scale.</p>
+<div class="app-row__meta"><span style="display:flex;flex-wrap:wrap;gap:8px"><span class="pill-dark">Free · Subscription</span><span class="pill-dark">French</span><span class="pill-dark">App in French</span></span><span class="app-row__go">Discover <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+</a></li></ul>
+</div></section>
+<section id="journal" class="wrap sect" aria-labelledby="journal-t">
+<div class="sect-head"><div style="display:flex;flex-direction:column;gap:12px"><p class="eyebrow" style="color:var(--signal-text)">The journal</p><h2 id="journal-t" class="h2">Guides, comparisons, alternatives</h2></div><p class="muted" style="margin:0;max-width:420px;font-size:17px">Every app has its own blog. The latest articles, across all apps.</p></div>
+<div class="cards"><article class="post-card"><div class="post-card__art" style="background:linear-gradient(160deg,#0B8BC9,#0278B0);color:#fff" aria-hidden="true"><span>vs</span><img class="icon" src="/assets/icons/zen24.png" alt="" width="48" height="48"></div>
+<div class="post-card__body"><div class="post-card__meta"><span class="chip">Zen24</span><span>Comparison</span><span aria-hidden="true">·</span><span>8 min</span></div>
+<h3 class="h3"><a href="/zen24/blog/zen24-vs-beds24-app/">Zen24 vs the Beds24 app: which mobile app should you use for your rentals?</a></h3><p class="muted" style="margin:0;font-size:15px;line-height:1.55">Zen24 or the Beds24 mobile app? Price, languages, messaging, KPIs, ICS export: a full comparison for managing your rentals from an iPhone.</p></div></article><article class="post-card"><div class="post-card__art" style="background:linear-gradient(160deg,#4F7D57,#2F5537);color:#fff" aria-hidden="true"><span>5×</span><img class="icon" src="/assets/icons/scalequest.png" alt="" width="48" height="48"></div>
+<div class="post-card__body"><div class="post-card__meta"><span class="chip">Guitar Scale Quest</span><span>Guide</span><span aria-hidden="true">·</span><span>9 min</span></div>
+<h3 class="h3"><a href="/scalequest/blog/pentatonic-scale-guitar-5-positions/">The pentatonic scale on guitar: the 5 positions explained</a></h3><p class="muted" style="margin:0;font-size:15px;line-height:1.55">The minor pentatonic scale on guitar: notes, intervals, the 5 positions on the fretboard and a method to memorise them.</p></div></article><article class="post-card"><div class="post-card__art" style="background:linear-gradient(160deg,#D05C38,#B8462A);color:#fff" aria-hidden="true"><span>30 s</span><img class="icon" src="/assets/icons/mijo.png" alt="" width="48" height="48"></div>
+<div class="post-card__body"><div class="post-card__meta"><span class="chip">Mijo</span><span>Planning</span><span aria-hidden="true">·</span><span>8 min</span></div>
+<h3 class="h3"><a href="/mijo/blog/weekly-family-meal-plan/">Weekly family meal plan: plan every dinner in 30 seconds</a></h3><p class="muted" style="margin:0;font-size:15px;line-height:1.55">How to plan the whole family’s dinners for the week, handle food exclusions and build one grocery list sorted by aisle.</p></div></article><article class="post-card"><div class="post-card__art" style="background:linear-gradient(160deg,#2E52C9,#1D3A99);color:#fff" aria-hidden="true"><span>km</span><img class="icon" src="/assets/icons/ik.png" alt="" width="48" height="48"></div>
+<div class="post-card__body"><div class="post-card__meta"><span class="chip">IK</span><span>Barème</span><span aria-hidden="true">·</span><span>8 min</span></div>
+<h3 class="h3"><a href="/ik/blog/bareme-kilometrique-2026-calcul/" hreflang="fr">Barème kilométrique 2026 : calcul et exemple pour les frais réels</a></h3><p class="muted" style="margin:0;font-size:15px;line-height:1.55">Le barème kilométrique 2026 (revenus 2025) : formules par puissance fiscale, exemple 5 CV à 8 000 km, véhicules électriques et règle des 40 km.</p></div></article></div>
+</section>
+<section id="studio" class="sect" style="border-top:1px solid var(--line)" aria-labelledby="studio-t"><div class="wrap split">
+<div style="display:flex;flex-direction:column;gap:16px"><p class="eyebrow" style="color:var(--signal-text)">The studio</p><h2 id="studio-t" class="h2" style="font-size:clamp(32px,3.6vw,48px)">Small apps, big attention to detail.</h2></div>
+<div class="principles"><div><h3>One job, one app</h3><p>No catch-all suite: each app solves one specific problem, from the first screen to the last.</p></div><div><h3>Made for iPhone</h3><p>Built for iOS 18 and later, with the gestures and conventions you already know.</p></div><div><h3>A human replies</h3><p>A question, a bug, an idea: write to contact@shipit.group — we read every message.</p></div></div>
+</div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="footer-grid"><div><p class="t">Zen24</p><a href="/zen24/">Overview</a><a href="/zen24/blog/">Blog</a><a href="https://apps.shipit.group/zen24/support.html">Support</a><a href="https://apps.shipit.group/zen24/legal/privacy.html">Privacy</a><a href="https://apps.shipit.group/zen24/legal/terms.html">Terms of use</a></div><div><p class="t">Guitar Scale Quest</p><a href="/scalequest/">Overview</a><a href="/scalequest/blog/">Blog</a><a href="https://apps.shipit.group/scalequest/support.html">Support</a><a href="https://apps.shipit.group/scalequest/legal/privacy.html">Privacy</a><a href="https://apps.shipit.group/scalequest/legal/terms.html">Terms of use</a></div><div><p class="t">Mijo</p><a href="/mijo/">Overview</a><a href="/mijo/blog/">Blog</a><a href="https://apps.shipit.group/mijo/support.html">Support</a><a href="https://apps.shipit.group/mijo/legal/privacy.html">Privacy</a><a href="https://apps.shipit.group/mijo/legal/terms.html">Terms of use</a></div><div><p class="t">IK</p><a href="/ik/">Overview</a><a href="/ik/blog/">Blog</a><a href="https://apps.shipit.group/ik/support.html">Support</a><a href="https://apps.shipit.group/ik/legal/privacy.html">Privacy</a><a href="https://apps.shipit.group/ik/legal/terms.html">Terms of use</a></div></div>
+<p class="wordmark" aria-hidden="true">SHIP IT<span>.</span></p>
+<div class="footer-bottom"><span>© 2026 SHIP IT</span><nav aria-label="SHIP IT"><a href="mailto:contact@shipit.group">contact@shipit.group</a><a href="/legal-notice/">Legal notice</a><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">Français</a></nav></div>
+</div></footer>
 </body>
 </html>
