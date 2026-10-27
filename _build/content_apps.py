@@ -55,17 +55,20 @@ APPS = {
 },
 # ------------------------------------------------------------------ RIFFO (ex Guitar Scale Quest, URL /scalequest/ figées)
 'scalequest': {
-  'name': 'Riffo', 'langs': ['en', 'fr'], 'icon': '/assets/icons/scalequest.png',
+  'name': 'Riffo', 'langs': ['en', 'fr'], 'icon': '/assets/icons/riffo.png',
   'store': {'en': 'https://apps.apple.com/app/id6760149969', 'fr': 'https://apps.apple.com/fr/app/id6760149969'},
   'category': 'EducationalApplication', 'offers': [('1.99', 'EUR'), ('19.99', 'EUR')],
   'colors': dict(strong='#2F5BEA', bright='#5B8CFF', tint='#D8E6FF', wash='#EEF4FF', deep='#0B1640', ondark='#F7B731', mutedd='#C6D3F2', bord='#1D2B5E', panel='linear-gradient(160deg,#2F5BEA,#13235B)', inktint='#13235B'),
   'shots': ['01_hero', '02_micro', '03_path', '04_chords', '05_ear', '06_song', '07_tuner', '08_streak'],
-  'shot_prefix': 'sq_', 'hero_shot': '01_hero', 'video': None,
+  'shot_prefix': 'riffo_', 'hero_shot': '01_hero',
+  'video': {'en': ('/assets/site/video/riffo_preview_en.mp4', '/assets/site/video/riffo_preview_en_poster.webp', (320, 693)),
+            'fr': ('/assets/site/video/riffo_preview_fr.mp4', '/assets/site/video/riffo_preview_fr_poster.webp', (320, 693))},
   'i18n': {
    'fr': dict(
      title='Riffo — apprendre la guitare sur iPhone, 5 minutes par jour',
      desc='Riffo vous apprend la guitare pas à pas, de la première note à l’improvisation. Vous jouez sur votre vraie guitare, l’app écoute et vous corrige. Essai 7 jours.',
      full_name='Riffo', sub='iPhone · iOS 18 et plus · Français, anglais, espagnol',
+     video_label='Aperçu vidéo de Riffo',
      h1='La guitare comme un jeu, 5 minutes par jour.',
      lead='Vous jouez sur votre vraie guitare, Riffo écoute avec le micro de l’iPhone et vous dit tout de suite si c’est juste. Un parcours de leçons courtes, de la première note jusqu’à l’impro.',
      price_line='Riffo Pro dès 1,99 €/semaine · essai gratuit de 7 jours',
@@ -83,6 +86,7 @@ APPS = {
      title='Riffo — learn guitar on iPhone, 5 minutes a day',
      desc='Riffo teaches you guitar step by step, from your first note to improvisation. You play your real guitar, the app listens and corrects you. 7-day free trial.',
      full_name='Riffo', sub='iPhone · iOS 18 or later · English, French, Spanish',
+     video_label='Riffo video preview',
      h1='Learn guitar like a game, 5 minutes a day.',
      lead='You play your real guitar, Riffo listens through your iPhone’s microphone and tells you right away if you got it. A path of short lessons, from your first note to improvisation.',
      price_line='Riffo Pro from €1.99/week · 7-day free trial',

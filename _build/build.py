@@ -370,8 +370,10 @@ def page_app(app, lang):
     store_id = re.search(r'id(\d+)', a['store'][lang]).group(1)
     extra = f'<meta name="apple-itunes-app" content="app-id={store_id}">\n'
     if a.get('video') and lang in a['video']:
-        v, poster = a['video'][lang]
-        media = f'<video src="{v}" poster="{poster}" autoplay muted loop playsinline preload="metadata" width="320" height="569" aria-label="{e(x["video_label"])}"></video>'
+        v, poster, *size = a['video'][lang]
+        w, h = size[0] if size else (320, 569)
+        ratio = f' style="aspect-ratio:{w}/{h}"' if size else ''
+        media = f'<video src="{v}" poster="{poster}" autoplay muted loop playsinline preload="metadata" width="{w}" height="{h}"{ratio} aria-label="{e(x["video_label"])}"></video>'
     else:
         media = f'<img src="{shot(app, a["hero_shot"], lang)}" alt="{e(x["shot_alts"][a["shots"].index(a["hero_shot"])])}" width="660" height="1434" fetchpriority="high">'
     shots = ''.join(f'<li><img src="{shot(app, s, lang)}" alt="{e(x["shot_alts"][i])}" width="660" height="1434" loading="lazy"></li>' for i, s in enumerate(a['shots']))
