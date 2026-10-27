@@ -15,7 +15,7 @@ Ces fichiers sont appelés en dur par les apps iOS et les fiches App Store :
 | `ik/bareme.json` | Barème kilométrique lu par l’app IK |
 | `CNAME`, `.nojekyll` | Domaine et désactivation de Jekyll |
 
-`<app>` = `zen24`, `scalequest`, `mijo`, `ik`, `pip`. Guitar Scale Quest référence aussi
+`<app>` = `zen24`, `scalequest`, `mijo`, `ik`, `pip`. Riffo (ex Guitar Scale Quest, toujours sous `scalequest`) référence aussi
 `https://ship-it-apps.github.io/apps-portfolio/scalequest/legal/{terms,privacy}.html` : le site doit rester
 sur GitHub Pages, dans ce dépôt.
 

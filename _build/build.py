@@ -56,14 +56,14 @@ def human_date(d, lang):
     return f'{dd} {MONTHS[lang][m-1]} {y}' if lang == 'fr' else f'{dd} {MONTHS[lang][m-1]} {y}'
 
 HOME = {
- 'en': dict(title='SHIP IT — iOS apps for everyday life', desc='SHIP IT builds focused iPhone apps: Zen24 for Beds24 hosts, Guitar Scale Quest, Mijo meal planner and IK mileage allowances.',
+ 'en': dict(title='SHIP IT — iOS apps for everyday life', desc='SHIP IT builds focused iPhone apps: Zen24 for Beds24 hosts, Riffo guitar lessons, Mijo meal planner and IK mileage allowances.',
             label='Independent studio · iOS apps', h1='Apps that do one thing. Really well.',
             lead='Run your Beds24 rentals, learn guitar scales, plan the week’s dinners, claim your mileage. iPhone apps, each built for a single job.',
             cta1='See our apps', cta2='Read the journal', apps_t='Our apps', apps_meta='iPhone · iOS 18 or later',
             journal_eyebrow='The journal', journal_t='Guides, comparisons, alternatives', journal_lead='Every app has its own blog. The latest articles, across all apps.',
             studio_eyebrow='The studio', studio_t='Small apps, big attention to detail.',
             principles=[('One job, one app', 'No catch-all suite: each app solves one specific problem, from the first screen to the last.'), ('Made for iPhone', 'Built for iOS 18 and later, with the gestures and conventions you already know.'), ('A human replies', 'A question, a bug, an idea: write to contact@shipit.group — we read every message.')]),
- 'fr': dict(title='SHIP IT — Apps iOS pour le quotidien', desc='SHIP IT conçoit des apps iPhone utiles : Zen24 pour les hôtes Beds24, Guitar Scale Quest, Mijo pour les menus de la semaine et IK pour les indemnités kilométriques.',
+ 'fr': dict(title='SHIP IT — Apps iOS pour le quotidien', desc='SHIP IT conçoit des apps iPhone utiles : Zen24 pour les hôtes Beds24, Riffo pour apprendre la guitare, Mijo pour les menus de la semaine et IK pour les indemnités kilométriques.',
             label='Studio indépendant · apps iOS', h1='Des apps qui font une chose. Très bien.',
             lead='Gérer ses locations Beds24, apprendre ses gammes, planifier les dîners, déclarer ses kilomètres. Des apps iPhone pensées chacune pour un seul usage.',
             cta1='Voir nos apps', cta2='Lire le journal', apps_t='Nos apps', apps_meta='iPhone · iOS 18 et plus',
@@ -73,11 +73,11 @@ HOME = {
 }
 HOME_APPS = {
  'en': {'zen24': ('Property management · Beds24', 'Arrivals, calendar, messages and KPIs for your Beds24 properties, in your pocket.', 'Free · Premium', '5 languages'),
-        'scalequest': ('Music · Learning', 'Master guitar scales with real-time note detection.', 'Free · Pro', '3 languages'),
+        'scalequest': ('Music · Learning', 'Learn guitar step by step: you play, the app listens.', 'Subscription · 7-day trial', '3 languages'),
         'mijo': ('Food · Meal planning', 'The week’s dinners and the grocery list, ready in 30 seconds.', 'Free · Subscription', '5 languages'),
         'ik': ('Finance · French tax', 'Business trips tracked by GPS and computed with the official French mileage scale.', 'Free · Subscription', 'French')},
  'fr': {'zen24': ('Gestion locative · Beds24', 'Arrivées, calendrier, messages et KPI de vos propriétés Beds24, dans votre poche.', 'Gratuit · Premium', '5 langues'),
-        'scalequest': ('Musique · Apprentissage', 'Maîtrisez vos gammes de guitare grâce à la détection de notes en temps réel.', 'Gratuit · Pro', '3 langues'),
+        'scalequest': ('Musique · Apprentissage', 'Apprenez la guitare pas à pas : vous jouez, l’app écoute.', 'Abonnement · essai 7 jours', '3 langues'),
         'mijo': ('Cuisine · Menus de la semaine', 'Les dîners de la semaine et la liste de courses, prêts en 30 secondes.', 'Gratuit · Abonnement', '5 langues'),
         'ik': ('Finances · Frais réels', 'Vos trajets pros suivis au GPS et calculés au barème officiel, export PDF compris.', 'Gratuit · Abonnement', 'Français')},
 }
