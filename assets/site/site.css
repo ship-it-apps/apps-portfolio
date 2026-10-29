@@ -229,7 +229,7 @@ a{color:var(--strong)}a:hover{color:var(--inktint)}
 .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr));gap:32px;padding-top:72px}
 .footer-grid div{display:flex;flex-direction:column;gap:10px}
 .footer-grid .t{margin:0 0 4px;font-weight:600;color:var(--ground)}
-.wordmark{margin:72px 0 0;font-family:var(--display);font-weight:800;font-size:clamp(80px,19vw,280px);line-height:.8;letter-spacing:-.06em;color:var(--ground)}
+.wordmark{margin:48px 0 0;font-family:var(--display);font-weight:800;font-size:24px;line-height:1;letter-spacing:-.02em;color:var(--ground)}
 .wordmark span{color:var(--signal)}
 .footer-bottom{margin-top:40px;padding:24px 0 32px;border-top:1px solid var(--dark-line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:13px}
 .footer-bottom nav{display:flex;flex-wrap:wrap;gap:20px}
