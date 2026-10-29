@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fff;
+            color: #1a1a2e;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .updated {
+            color: #6c757d;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        ul {
+            margin: 8px 0 16px 24px;
+        }
+
+        li {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 6px;
+        }
+
+        a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+
+        .lang-switch {
+            position: fixed;
+            top: 12px;
+            right: 12px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            padding: 4px;
+            font-size: 13px;
+            display: flex;
+            gap: 2px;
+            z-index: 10;
+        }
+
+        .lang-switch button {
+            border: none;
+            background: none;
+            padding: 4px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .lang-switch button.active {
+            background: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switch">
+        <button id="btn-fr" onclick="setLang('fr')">FR</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+        <button id="btn-es" onclick="setLang('es')">ES</button>
+        <button id="btn-it" onclick="setLang('it')">IT</button>
+        <button id="btn-pt" onclick="setLang('pt')">PT</button>
+    </div>
+
+    <div class="container">
+        <a id="back-link" class="back" href="index.html"></a>
+
+        <!-- FRENCH VERSION -->
+        <div id="lang-fr" class="lang-section">
+            <h1>Politique de confidentialité</h1>
+            <p class="updated">Dernière mise à jour : 29 octobre 2026</p>
+
+            <h2>1. Introduction</h2>
+            <p>First (« nous », « l'application ») est une application iOS éditée par SHIP IT : les apps que vous choisissez restent verrouillées grâce à Temps d'écran jusqu'à la lecture du verset du jour. Cette politique décrit les données traitées par l'application. En résumé : aucun compte, vos données restent sur votre iPhone, une mesure d'audience anonyme, aucune publicité.</p>
+            <h2>2. Données stockées sur l'appareil</h2>
+            <p>Pour fonctionner, l'application enregistre <strong>uniquement sur votre appareil</strong> :</p>
+            <ul>
+                <li>vos séances (verset, réflexion, prière, réponse facultative au quiz) et votre série « Jour N » ;</li>
+                <li>vos versets favoris et votre progression dans les plans de lecture ;</li>
+                <li>vos réglages : heure du rappel du matin, horaires de blocage, durée du déblocage d'urgence, langue ;</li>
+                <li>la sélection des apps à verrouiller, sous forme de jetons opaques fournis par Apple (voir section 3).</li>
+            </ul>
+            <p>Ces données sont stockées dans l'application (SwiftData) et dans un espace partagé (App Group) avec les extensions de First (widgets, écran de blocage, suivi des horaires). Elles ne sont synchronisées ni avec iCloud ni avec un serveur de First : nous n'avons pas de serveur qui les recevrait. Elles sont supprimées en désinstallant l'application.</p>
+            <h2>3. Temps d'écran (Screen Time)</h2>
+            <p>Le verrouillage repose sur les outils Temps d'écran d'Apple (FamilyControls, ManagedSettings et DeviceActivity), que vous autorisez lors de la configuration. Vous choisissez vos apps dans le sélecteur d'Apple ; First ne reçoit que des <strong>jetons opaques</strong>. First ne voit ni le nom de vos apps ni l'usage que vous en faites, et ne connaît pas votre temps d'écran. Vous pouvez retirer cette autorisation à tout moment dans Réglages &gt; Temps d'écran d'iOS.</p>
+            <h2>4. Notifications</h2>
+            <p>Si vous les autorisez, l'application programme des notifications <strong>locales</strong> : le rappel du matin et la notification qui permet d'ouvrir la séance. Elles sont créées sur l'appareil : aucun jeton de notification n'est collecté et aucun message n'est envoyé depuis un serveur. Vous pouvez les désactiver dans les réglages de l'application ou d'iOS.</p>
+            <h2>5. Mesure d'audience</h2>
+            <p>Pour améliorer l'application, nous utilisons <strong>PostHog</strong>, hébergé dans l'Union européenne. Il reçoit des événements <strong>anonymes</strong> sur l'utilisation de l'application, par exemple les étapes de la configuration ou une séance commencée ou terminée, avec les informations techniques nécessaires au service (par exemple la version de l'application et d'iOS).</p>
+            <ul>
+                <li>aucun profil de personne n'est créé et aucun enregistrement de session (replay) n'est effectué ;</li>
+                <li>aucun nom d'app ni aucune information sur l'usage de vos apps n'est envoyé ;</li>
+                <li>ces données ne sont utilisées ni pour de la publicité, ni pour du suivi entre apps.</li>
+            </ul>
+            <p>Voir la <a href="https://posthog.com/privacy">politique de confidentialité de PostHog</a>.</p>
+            <h2>6. Abonnements</h2>
+            <p>L'abonnement First Premium est acheté et payé via l'App Store d'Apple. Nous ne recevons jamais vos informations de paiement. Pour vérifier qu'un abonnement est actif, l'application utilise <strong>RevenueCat</strong>, notre prestataire de gestion des abonnements, qui reçoit :</p>
+            <ul>
+                <li>les informations de transaction de l'App Store (produit acheté, dates, statut de l'abonnement) ;</li>
+                <li>un identifiant anonyme généré par l'application, qui n'est lié à aucune identité ;</li>
+                <li>des informations techniques nécessaires au service (version de l'application et d'iOS, pays de l'App Store, adresse IP).</li>
+            </ul>
+            <p>Ces données servent uniquement à débloquer First Premium et à restaurer les achats. Elles ne sont utilisées ni pour de la publicité, ni pour du suivi. Voir la <a href="https://www.revenuecat.com/privacy">politique de confidentialité de RevenueCat</a>.</p>
+            <h2>7. Données que nous ne collectons pas</h2>
+            <ul>
+                <li>Aucun compte ni identifiant de connexion, aucune adresse e-mail.</li>
+                <li>Aucun nom d'app, aucun historique d'usage, aucun temps d'écran.</li>
+                <li>Aucune localisation, aucun contact, aucune photo.</li>
+                <li>Aucune publicité, aucun identifiant publicitaire (IDFA), aucun suivi entre apps.</li>
+            </ul>
+            <h2>8. Partage des données</h2>
+            <p>Nous ne vendons aucune donnée. Les seuls partenaires techniques sont :</p>
+            <ul>
+                <li><strong>Apple</strong> : distribution de l'application, paiements et Temps d'écran.</li>
+                <li><strong>RevenueCat</strong> : vérification des abonnements.</li>
+                <li><strong>PostHog</strong> (UE) : mesure d'audience anonyme.</li>
+            </ul>
+            <h2>9. Enfants</h2>
+            <p>First n'est pas destinée aux enfants de moins de 13 ans et n'est pas un outil de contrôle parental.</p>
+            <h2>10. Vos droits</h2>
+            <p>Conformément au RGPD, vous pouvez demander l'accès, la rectification ou la suppression des données d'abonnement associées à votre appareil en nous écrivant. Les données stockées sur l'appareil sont supprimées en désinstallant l'application.</p>
+            <h2>11. Modifications</h2>
+            <p>Nous pouvons modifier cette politique. La date de dernière mise à jour figure en haut de cette page.</p>
+            <h2>12. Contact</h2>
+            <p>Pour toute question : <a href="mailto:contact@shipit.group">contact@shipit.group</a></p>
+        </div>
+
+        <!-- ENGLISH VERSION -->
+        <div id="lang-en" class="lang-section">
+            <h1>Privacy Policy</h1>
+            <p class="updated">Last updated: October 29, 2026</p>
+
+            <h2>1. Introduction</h2>
+            <p>First ("we", "the app") is an iOS app published by SHIP IT: the apps you choose stay locked with Screen Time until you read the verse of the day. This policy describes the data the app handles. In short: no account, your data stays on your iPhone, anonymous analytics, no ads.</p>
+            <h2>2. Data Stored on the Device</h2>
+            <p>To work, the app stores the following <strong>on your device only</strong>:</p>
+            <ul>
+                <li>your sessions (verse, reflection, prayer, optional quiz answer) and your "Day N" streak;</li>
+                <li>your favorite verses and your progress in reading plans;</li>
+                <li>your settings: morning reminder time, blocking schedule, emergency unlock length, language;</li>
+                <li>the apps you chose to lock, as opaque tokens provided by Apple (see section 3).</li>
+            </ul>
+            <p>This data is stored in the app (SwiftData) and in a shared container (App Group) used by First's extensions (widgets, shield screen, schedule monitoring). It is not synced with iCloud or with any First server: we have no server that would receive it. It is removed when you delete the app.</p>
+            <h2>3. Screen Time</h2>
+            <p>Locking relies on Apple's Screen Time tools (FamilyControls, ManagedSettings and DeviceActivity), which you authorize during setup. You pick your apps in Apple's picker; First only receives <strong>opaque tokens</strong>. First cannot see the names of your apps or how you use them, and does not know your screen time. You can revoke this authorization at any time in iOS Settings &gt; Screen Time.</p>
+            <h2>4. Notifications</h2>
+            <p>If you allow them, the app schedules <strong>local</strong> notifications: the morning reminder and the notification that opens the session. They are created on the device: no push token is collected and no message is sent from a server. You can turn them off in the app or in iOS Settings.</p>
+            <h2>5. Analytics</h2>
+            <p>To improve the app, we use <strong>PostHog</strong>, hosted in the European Union. It receives <strong>anonymous</strong> events about how the app is used, such as setup steps or a session started or completed, along with technical information needed for the service (for example the app and iOS version).</p>
+            <ul>
+                <li>no person profile is created and no session recording (replay) is made;</li>
+                <li>no app name and no information about how you use your apps is sent;</li>
+                <li>this data is never used for advertising or cross-app tracking.</li>
+            </ul>
+            <p>See <a href="https://posthog.com/privacy">PostHog's privacy policy</a>.</p>
+            <h2>6. Subscriptions</h2>
+            <p>The First Premium subscription is purchased and paid through Apple's App Store. We never receive your payment details. To check that a subscription is active, the app uses <strong>RevenueCat</strong>, our subscription management provider, which receives:</p>
+            <ul>
+                <li>App Store transaction information (product purchased, dates, subscription status);</li>
+                <li>an anonymous identifier generated by the app, not linked to anyone's identity;</li>
+                <li>technical information needed to provide the service (app and iOS version, App Store country, IP address).</li>
+            </ul>
+            <p>This data is used only to unlock First Premium and restore purchases. It is never used for advertising or tracking. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>.</p>
+            <h2>7. Data We Do Not Collect</h2>
+            <ul>
+                <li>No account or login, no email address.</li>
+                <li>No app names, no usage history, no screen time.</li>
+                <li>No location, contacts or photos.</li>
+                <li>No advertising, no advertising identifier (IDFA), no cross-app tracking.</li>
+            </ul>
+            <h2>8. Data Sharing</h2>
+            <p>We do not sell any data. The only technical partners are:</p>
+            <ul>
+                <li><strong>Apple</strong>: app distribution, payments and Screen Time.</li>
+                <li><strong>RevenueCat</strong>: subscription validation.</li>
+                <li><strong>PostHog</strong> (EU): anonymous analytics.</li>
+            </ul>
+            <h2>9. Children</h2>
+            <p>First is not intended for children under 13 and is not a parental control tool.</p>
+            <h2>10. Your Rights</h2>
+            <p>Under the GDPR and similar laws, you can ask us to access, correct or delete the subscription data associated with your device by writing to us. Data stored on the device is removed by deleting the app.</p>
+            <h2>11. Changes</h2>
+            <p>We may update this policy. The date of the last update is shown at the top of this page.</p>
+            <h2>12. Contact</h2>
+            <p>For any questions: <a href="mailto:contact@shipit.group">contact@shipit.group</a></p>
+        </div>
+
+        <!-- SPANISH VERSION -->
+        <div id="lang-es" class="lang-section">
+            <h1>Política de privacidad</h1>
+            <p class="updated">Última actualización: 29 de octubre de 2026</p>
+
+            <h2>1. Introducción</h2>
+            <p>First («nosotros», «la aplicación») es una aplicación para iOS publicada por SHIP IT: las apps que eliges permanecen bloqueadas con Tiempo de uso hasta que lees el versículo del día. Esta política describe los datos que trata la aplicación. En resumen: sin cuenta, tus datos se quedan en tu iPhone, medición de audiencia anónima, sin publicidad.</p>
+            <h2>2. Datos almacenados en el dispositivo</h2>
+            <p>Para funcionar, la aplicación guarda <strong>solo en tu dispositivo</strong>:</p>
+            <ul>
+                <li>tus sesiones (versículo, reflexión, oración, respuesta opcional al cuestionario) y tu racha «Día N»;</li>
+                <li>tus versículos favoritos y tu progreso en los planes de lectura;</li>
+                <li>tus ajustes: hora del recordatorio matutino, horario de bloqueo, duración del desbloqueo de emergencia, idioma;</li>
+                <li>las apps que elegiste bloquear, en forma de identificadores opacos proporcionados por Apple (ver sección 3).</li>
+            </ul>
+            <p>Estos datos se guardan en la aplicación (SwiftData) y en un espacio compartido (App Group) con las extensiones de First (widgets, pantalla de bloqueo, seguimiento del horario). No se sincronizan con iCloud ni con ningún servidor de First: no tenemos ningún servidor que los reciba. Se eliminan al desinstalar la aplicación.</p>
+            <h2>3. Tiempo de uso (Screen Time)</h2>
+            <p>El bloqueo se basa en las herramientas de Tiempo de uso de Apple (FamilyControls, ManagedSettings y DeviceActivity), que autorizas durante la configuración. Eliges tus apps en el selector de Apple; First solo recibe <strong>identificadores opacos</strong>. First no ve el nombre de tus apps ni el uso que haces de ellas, y no conoce tu tiempo de uso. Puedes retirar esta autorización en cualquier momento en Ajustes &gt; Tiempo de uso de iOS.</p>
+            <h2>4. Notificaciones</h2>
+            <p>Si las autorizas, la aplicación programa notificaciones <strong>locales</strong>: el recordatorio matutino y la notificación que abre la sesión. Se crean en el dispositivo: no se recopila ningún token de notificación ni se envía ningún mensaje desde un servidor. Puedes desactivarlas en los ajustes de la aplicación o de iOS.</p>
+            <h2>5. Medición de audiencia</h2>
+            <p>Para mejorar la aplicación, usamos <strong>PostHog</strong>, alojado en la Unión Europea. Recibe eventos <strong>anónimos</strong> sobre el uso de la aplicación, por ejemplo los pasos de la configuración o una sesión iniciada o terminada, junto con la información técnica necesaria para el servicio (por ejemplo, la versión de la aplicación y de iOS).</p>
+            <ul>
+                <li>no se crea ningún perfil de persona ni se graba ninguna sesión (replay);</li>
+                <li>no se envía ningún nombre de app ni información sobre el uso de tus apps;</li>
+                <li>estos datos no se usan para publicidad ni para seguimiento entre apps.</li>
+            </ul>
+            <p>Consulta la <a href="https://posthog.com/privacy">política de privacidad de PostHog</a>.</p>
+            <h2>6. Suscripciones</h2>
+            <p>La suscripción First Premium se compra y se paga a través de la App Store de Apple. Nunca recibimos tus datos de pago. Para comprobar que una suscripción está activa, la aplicación usa <strong>RevenueCat</strong>, nuestro proveedor de gestión de suscripciones, que recibe:</p>
+            <ul>
+                <li>la información de la transacción de la App Store (producto comprado, fechas, estado de la suscripción);</li>
+                <li>un identificador anónimo generado por la aplicación, no vinculado a ninguna identidad;</li>
+                <li>información técnica necesaria para el servicio (versión de la aplicación y de iOS, país de la App Store, dirección IP).</li>
+            </ul>
+            <p>Estos datos solo sirven para desbloquear First Premium y restaurar las compras. No se usan para publicidad ni para seguimiento. Consulta la <a href="https://www.revenuecat.com/privacy">política de privacidad de RevenueCat</a>.</p>
+            <h2>7. Datos que no recopilamos</h2>
+            <ul>
+                <li>Ninguna cuenta ni inicio de sesión, ninguna dirección de correo electrónico.</li>
+                <li>Ningún nombre de app, ningún historial de uso, ningún tiempo de uso.</li>
+                <li>Ninguna ubicación, contacto ni foto.</li>
+                <li>Ninguna publicidad, ningún identificador publicitario (IDFA), ningún seguimiento entre apps.</li>
+            </ul>
+            <h2>8. Compartición de datos</h2>
+            <p>No vendemos ningún dato. Los únicos socios técnicos son:</p>
+            <ul>
+                <li><strong>Apple</strong>: distribución de la aplicación, pagos y Tiempo de uso.</li>
+                <li><strong>RevenueCat</strong>: verificación de suscripciones.</li>
+                <li><strong>PostHog</strong> (UE): medición de audiencia anónima.</li>
+            </ul>
+            <h2>9. Menores</h2>
+            <p>First no está destinada a menores de 13 años y no es una herramienta de control parental.</p>
+            <h2>10. Tus derechos</h2>
+            <p>De acuerdo con el RGPD, puedes solicitar el acceso, la rectificación o la supresión de los datos de suscripción asociados a tu dispositivo escribiéndonos. Los datos almacenados en el dispositivo se eliminan al desinstalar la aplicación.</p>
+            <h2>11. Cambios</h2>
+            <p>Podemos modificar esta política. La fecha de la última actualización figura en la parte superior de esta página.</p>
+            <h2>12. Contacto</h2>
+            <p>Para cualquier pregunta: <a href="mailto:contact@shipit.group">contact@shipit.group</a></p>
+        </div>
+
+        <!-- ITALIAN VERSION -->
+        <div id="lang-it" class="lang-section">
+            <h1>Informativa sulla privacy</h1>
+            <p class="updated">Ultimo aggiornamento: 29 ottobre 2026</p>
+
+            <h2>1. Introduzione</h2>
+            <p>First («noi», «l'app») è un'app iOS pubblicata da SHIP IT: le app che scegli restano bloccate con Tempo di utilizzo finché non leggi il versetto del giorno. Questa informativa descrive i dati trattati dall'app. In breve: nessun account, i tuoi dati restano sul tuo iPhone, statistiche d'uso anonime, nessuna pubblicità.</p>
+            <h2>2. Dati memorizzati sul dispositivo</h2>
+            <p>Per funzionare, l'app salva <strong>solo sul tuo dispositivo</strong>:</p>
+            <ul>
+                <li>le tue sessioni (versetto, riflessione, preghiera, risposta facoltativa al quiz) e la tua serie «Giorno N»;</li>
+                <li>i tuoi versetti preferiti e i tuoi progressi nei piani di lettura;</li>
+                <li>le tue impostazioni: orario del promemoria del mattino, fasce di blocco, durata dello sblocco d'emergenza, lingua;</li>
+                <li>le app che hai scelto di bloccare, sotto forma di identificativi opachi forniti da Apple (vedi sezione 3).</li>
+            </ul>
+            <p>Questi dati sono salvati nell'app (SwiftData) e in uno spazio condiviso (App Group) con le estensioni di First (widget, schermata di blocco, monitoraggio delle fasce orarie). Non sono sincronizzati con iCloud né con alcun server di First: non abbiamo alcun server che li riceva. Vengono eliminati disinstallando l'app.</p>
+            <h2>3. Tempo di utilizzo (Screen Time)</h2>
+            <p>Il blocco si basa sugli strumenti Tempo di utilizzo di Apple (FamilyControls, ManagedSettings e DeviceActivity), che autorizzi durante la configurazione. Scegli le tue app nel selettore di Apple; First riceve solo <strong>identificativi opachi</strong>. First non vede il nome delle tue app né l'uso che ne fai, e non conosce il tuo tempo di utilizzo. Puoi revocare questa autorizzazione in qualsiasi momento in Impostazioni &gt; Tempo di utilizzo di iOS.</p>
+            <h2>4. Notifiche</h2>
+            <p>Se le autorizzi, l'app programma notifiche <strong>locali</strong>: il promemoria del mattino e la notifica che apre la sessione. Vengono create sul dispositivo: nessun token di notifica viene raccolto e nessun messaggio viene inviato da un server. Puoi disattivarle nelle impostazioni dell'app o di iOS.</p>
+            <h2>5. Statistiche d'uso</h2>
+            <p>Per migliorare l'app usiamo <strong>PostHog</strong>, ospitato nell'Unione europea. Riceve eventi <strong>anonimi</strong> sull'uso dell'app, ad esempio i passaggi della configurazione o una sessione iniziata o completata, insieme alle informazioni tecniche necessarie al servizio (ad esempio la versione dell'app e di iOS).</p>
+            <ul>
+                <li>non viene creato alcun profilo personale e non viene effettuata alcuna registrazione della sessione (replay);</li>
+                <li>non viene inviato alcun nome di app né alcuna informazione sull'uso delle tue app;</li>
+                <li>questi dati non sono usati per la pubblicità né per il tracciamento tra app.</li>
+            </ul>
+            <p>Consulta l'<a href="https://posthog.com/privacy">informativa sulla privacy di PostHog</a>.</p>
+            <h2>6. Abbonamenti</h2>
+            <p>L'abbonamento First Premium si acquista e si paga tramite l'App Store di Apple. Non riceviamo mai i tuoi dati di pagamento. Per verificare che un abbonamento sia attivo, l'app usa <strong>RevenueCat</strong>, il nostro fornitore per la gestione degli abbonamenti, che riceve:</p>
+            <ul>
+                <li>le informazioni sulla transazione dell'App Store (prodotto acquistato, date, stato dell'abbonamento);</li>
+                <li>un identificativo anonimo generato dall'app, non collegato ad alcuna identità;</li>
+                <li>informazioni tecniche necessarie al servizio (versione dell'app e di iOS, paese dell'App Store, indirizzo IP).</li>
+            </ul>
+            <p>Questi dati servono solo a sbloccare First Premium e a ripristinare gli acquisti. Non sono usati per la pubblicità né per il tracciamento. Consulta l'<a href="https://www.revenuecat.com/privacy">informativa sulla privacy di RevenueCat</a>.</p>
+            <h2>7. Dati che non raccogliamo</h2>
+            <ul>
+                <li>Nessun account né credenziali di accesso, nessun indirizzo e-mail.</li>
+                <li>Nessun nome di app, nessuna cronologia di utilizzo, nessun tempo di utilizzo.</li>
+                <li>Nessuna posizione, nessun contatto, nessuna foto.</li>
+                <li>Nessuna pubblicità, nessun identificativo pubblicitario (IDFA), nessun tracciamento tra app.</li>
+            </ul>
+            <h2>8. Condivisione dei dati</h2>
+            <p>Non vendiamo alcun dato. Gli unici partner tecnici sono:</p>
+            <ul>
+                <li><strong>Apple</strong>: distribuzione dell'app, pagamenti e Tempo di utilizzo.</li>
+                <li><strong>RevenueCat</strong>: verifica degli abbonamenti.</li>
+                <li><strong>PostHog</strong> (UE): statistiche d'uso anonime.</li>
+            </ul>
+            <h2>9. Minori</h2>
+            <p>First non è destinata ai minori di 13 anni e non è uno strumento di controllo parentale.</p>
+            <h2>10. I tuoi diritti</h2>
+            <p>Ai sensi del GDPR, puoi chiedere l'accesso, la rettifica o la cancellazione dei dati di abbonamento associati al tuo dispositivo scrivendoci. I dati memorizzati sul dispositivo vengono eliminati disinstallando l'app.</p>
+            <h2>11. Modifiche</h2>
+            <p>Possiamo modificare questa informativa. La data dell'ultimo aggiornamento è indicata in cima a questa pagina.</p>
+            <h2>12. Contatti</h2>
+            <p>Per qualsiasi domanda: <a href="mailto:contact@shipit.group">contact@shipit.group</a></p>
+        </div>
+
+        <!-- PORTUGUESE (BRAZIL) VERSION -->
+        <div id="lang-pt" class="lang-section">
+            <h1>Política de privacidade</h1>
+            <p class="updated">Última atualização: 29 de outubro de 2026</p>
+
+            <h2>1. Introdução</h2>
+            <p>First («nós», «o app») é um app para iOS publicado pela SHIP IT: os apps que você escolhe ficam bloqueados com o Tempo de Uso até você ler o versículo do dia. Esta política descreve os dados tratados pelo app. Em resumo: sem conta, seus dados ficam no seu iPhone, medição de audiência anônima, sem anúncios.</p>
+            <h2>2. Dados armazenados no dispositivo</h2>
+            <p>Para funcionar, o app guarda <strong>somente no seu dispositivo</strong>:</p>
+            <ul>
+                <li>suas sessões (versículo, reflexão, oração, resposta opcional ao quiz) e sua sequência «Dia N»;</li>
+                <li>seus versículos favoritos e seu progresso nos planos de leitura;</li>
+                <li>seus ajustes: horário do lembrete da manhã, horários de bloqueio, duração do desbloqueio de emergência, idioma;</li>
+                <li>os apps que você escolheu bloquear, na forma de identificadores opacos fornecidos pela Apple (veja a seção 3).</li>
+            </ul>
+            <p>Esses dados ficam no app (SwiftData) e em um espaço compartilhado (App Group) com as extensões do First (widgets, tela de bloqueio, acompanhamento dos horários). Eles não são sincronizados com o iCloud nem com nenhum servidor do First: não temos servidor que os receba. Eles são apagados quando você desinstala o app.</p>
+            <h2>3. Tempo de Uso (Screen Time)</h2>
+            <p>O bloqueio usa as ferramentas de Tempo de Uso da Apple (FamilyControls, ManagedSettings e DeviceActivity), que você autoriza durante a configuração. Você escolhe seus apps no seletor da Apple; o First recebe apenas <strong>identificadores opacos</strong>. O First não vê o nome dos seus apps nem o uso que você faz deles, e não conhece o seu tempo de uso. Você pode retirar essa autorização a qualquer momento em Ajustes &gt; Tempo de Uso do iOS.</p>
+            <h2>4. Notificações</h2>
+            <p>Se você permitir, o app agenda notificações <strong>locais</strong>: o lembrete da manhã e a notificação que abre a sessão. Elas são criadas no dispositivo: nenhum token de notificação é coletado e nenhuma mensagem é enviada a partir de um servidor. Você pode desativá-las nos ajustes do app ou do iOS.</p>
+            <h2>5. Medição de audiência</h2>
+            <p>Para melhorar o app, usamos o <strong>PostHog</strong>, hospedado na União Europeia. Ele recebe eventos <strong>anônimos</strong> sobre o uso do app, por exemplo as etapas da configuração ou uma sessão iniciada ou concluída, junto com as informações técnicas necessárias ao serviço (por exemplo, a versão do app e do iOS).</p>
+            <ul>
+                <li>nenhum perfil de pessoa é criado e nenhuma gravação de sessão (replay) é feita;</li>
+                <li>nenhum nome de app e nenhuma informação sobre o uso dos seus apps é enviada;</li>
+                <li>esses dados não são usados para publicidade nem para rastreamento entre apps.</li>
+            </ul>
+            <p>Veja a <a href="https://posthog.com/privacy">política de privacidade do PostHog</a>.</p>
+            <h2>6. Assinaturas</h2>
+            <p>A assinatura First Premium é comprada e paga pela App Store da Apple. Nunca recebemos seus dados de pagamento. Para verificar se uma assinatura está ativa, o app usa o <strong>RevenueCat</strong>, nosso fornecedor de gestão de assinaturas, que recebe:</p>
+            <ul>
+                <li>as informações da transação da App Store (produto comprado, datas, status da assinatura);</li>
+                <li>um identificador anônimo gerado pelo app, não vinculado a nenhuma identidade;</li>
+                <li>informações técnicas necessárias ao serviço (versão do app e do iOS, país da App Store, endereço IP).</li>
+            </ul>
+            <p>Esses dados servem apenas para desbloquear o First Premium e restaurar as compras. Não são usados para publicidade nem para rastreamento. Veja a <a href="https://www.revenuecat.com/privacy">política de privacidade do RevenueCat</a>.</p>
+            <h2>7. Dados que não coletamos</h2>
+            <ul>
+                <li>Nenhuma conta ou login, nenhum endereço de e-mail.</li>
+                <li>Nenhum nome de app, nenhum histórico de uso, nenhum tempo de uso.</li>
+                <li>Nenhuma localização, contato ou foto.</li>
+                <li>Nenhum anúncio, nenhum identificador de publicidade (IDFA), nenhum rastreamento entre apps.</li>
+            </ul>
+            <h2>8. Compartilhamento de dados</h2>
+            <p>Não vendemos nenhum dado. Os únicos parceiros técnicos são:</p>
+            <ul>
+                <li><strong>Apple</strong>: distribuição do app, pagamentos e Tempo de Uso.</li>
+                <li><strong>RevenueCat</strong>: verificação das assinaturas.</li>
+                <li><strong>PostHog</strong> (UE): medição de audiência anônima.</li>
+            </ul>
+            <h2>9. Crianças</h2>
+            <p>O First não é destinado a crianças com menos de 13 anos e não é uma ferramenta de controle parental.</p>
+            <h2>10. Seus direitos</h2>
+            <p>De acordo com o RGPD e a LGPD, você pode solicitar o acesso, a correção ou a exclusão dos dados de assinatura associados ao seu dispositivo escrevendo para nós. Os dados armazenados no dispositivo são apagados quando você desinstala o app.</p>
+            <h2>11. Alterações</h2>
+            <p>Podemos alterar esta política. A data da última atualização aparece no topo desta página.</p>
+            <h2>12. Contato</h2>
+            <p>Para qualquer dúvida: <a href="mailto:contact@shipit.group">contact@shipit.group</a></p>
+        </div>
+    </div>
+
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll('.lang-section').forEach(function(s) { s.classList.remove('active'); });
+            document.querySelectorAll('.lang-switch button').forEach(function(b) { b.classList.remove('active'); });
+            document.getElementById('lang-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+            document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
+            var backTexts = {fr:'Retour',en:'Back',es:'Volver',it:'Indietro',pt:'Voltar'};
+            document.getElementById('back-link').innerHTML = '&larr; ' + (backTexts[lang] || 'Back');
+        }
+        var params = new URLSearchParams(window.location.search);
+        var paramLang = (params.get('lang') || '').toLowerCase();
+        var userLang = paramLang || (navigator.language || 'en').toLowerCase();
+        var supported = ['fr', 'en', 'es', 'it', 'pt'];
+        var chosen = 'en';
+        for (var i = 0; i < supported.length; i++) {
+            if (userLang.indexOf(supported[i]) === 0) { chosen = supported[i]; break; }
+        }
+        setLang(chosen);
+    </script>
+</body>
+</html>

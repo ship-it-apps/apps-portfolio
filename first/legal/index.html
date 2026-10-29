@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First - Legal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            color: #1a1a2e;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 60px 24px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #6c757d;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        a {
+            display: block;
+            padding: 16px 24px;
+            background: #fff;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #1a1a2e;
+            font-weight: 600;
+            font-size: 16px;
+            border: 1px solid #e9ecef;
+            transition: all 0.2s;
+        }
+
+        a:hover {
+            border-color: #007AFF;
+            background: #f0f7ff;
+        }
+
+        .footer {
+            margin-top: 60px;
+            color: #adb5bd;
+            font-size: 13px;
+        }
+    
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+
+        .lang-switch {
+            position: fixed;
+            top: 12px;
+            right: 12px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            padding: 4px;
+            font-size: 13px;
+            display: flex;
+            gap: 2px;
+            z-index: 10;
+        }
+
+        .lang-switch button {
+            border: none;
+            background: none;
+            padding: 4px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .lang-switch button.active {
+            background: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switch">
+        <button id="btn-fr" onclick="setLang('fr')">FR</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+        <button id="btn-es" onclick="setLang('es')">ES</button>
+        <button id="btn-it" onclick="setLang('it')">IT</button>
+        <button id="btn-pt" onclick="setLang('pt')">PT</button>
+    </div>
+
+    <div class="container">
+        <h1>First</h1>
+        <div id="lang-fr" class="lang-section">
+            <p class="subtitle">Informations légales</p>
+
+            <div class="links">
+                <a href="privacy.html?lang=fr">Politique de confidentialité</a>
+                <a href="terms.html?lang=fr">Conditions d'utilisation</a>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2026 SHIP IT. Tous droits réservés.</p>
+            </div>
+        </div>
+        <div id="lang-en" class="lang-section">
+            <p class="subtitle">Legal information</p>
+
+            <div class="links">
+                <a href="privacy.html?lang=en">Privacy Policy</a>
+                <a href="terms.html?lang=en">Terms of Use</a>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2026 SHIP IT. All rights reserved.</p>
+            </div>
+        </div>
+        <div id="lang-es" class="lang-section">
+            <p class="subtitle">Información legal</p>
+
+            <div class="links">
+                <a href="privacy.html?lang=es">Política de privacidad</a>
+                <a href="terms.html?lang=es">Condiciones de uso</a>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2026 SHIP IT. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <div id="lang-it" class="lang-section">
+            <p class="subtitle">Informazioni legali</p>
+
+            <div class="links">
+                <a href="privacy.html?lang=it">Informativa sulla privacy</a>
+                <a href="terms.html?lang=it">Condizioni d'uso</a>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2026 SHIP IT. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+        <div id="lang-pt" class="lang-section">
+            <p class="subtitle">Informações legais</p>
+
+            <div class="links">
+                <a href="privacy.html?lang=pt">Política de privacidade</a>
+                <a href="terms.html?lang=pt">Termos de uso</a>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2026 SHIP IT. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll('.lang-section').forEach(function(s) { s.classList.remove('active'); });
+            document.querySelectorAll('.lang-switch button').forEach(function(b) { b.classList.remove('active'); });
+            document.getElementById('lang-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+            document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
+        }
+        var params = new URLSearchParams(window.location.search);
+        var paramLang = (params.get('lang') || '').toLowerCase();
+        var userLang = paramLang || (navigator.language || 'en').toLowerCase();
+        var supported = ['fr', 'en', 'es', 'it', 'pt'];
+        var chosen = 'en';
+        for (var i = 0; i < supported.length; i++) {
+            if (userLang.indexOf(supported[i]) === 0) { chosen = supported[i]; break; }
+        }
+        setLang(chosen);
+    </script>
+</body>
+</html>

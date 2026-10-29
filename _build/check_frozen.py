@@ -6,13 +6,13 @@
   python3 _build/check_frozen.py --live       # vérifie aussi que chaque URL figée répond 200 en ligne
 
 Fichiers figés : <app>/support.html, <app>/legal/{index,privacy,terms}.html (zen24, scalequest,
-mijo, ik, pip), css/style.css (utilisé par ces pages), assets/icons/*, ik/bareme.json (lu par l'app IK),
+mijo, ik, pip, first), css/style.css (utilisé par ces pages), assets/icons/*, ik/bareme.json (lu par l'app IK),
 CNAME, .nojekyll. Plus le miroir GitHub Pages cité dans la fiche App Store de Guitar Scale Quest.
 """
 import subprocess, sys, urllib.request, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-APPS = ['zen24', 'scalequest', 'mijo', 'ik', 'pip']
+APPS = ['zen24', 'scalequest', 'mijo', 'ik', 'pip', 'first']
 FILES = [f'{a}/{p}' for a in APPS for p in ('support.html', 'legal/index.html', 'legal/privacy.html', 'legal/terms.html')]
 FILES += ['css/style.css', 'ik/bareme.json', 'CNAME', '.nojekyll'] + [f'assets/icons/{a}.png' for a in APPS]
 LIVE = [f'https://apps.shipit.group/{f}' for f in FILES if f not in ('CNAME', '.nojekyll')]

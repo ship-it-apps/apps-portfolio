@@ -20,7 +20,7 @@ from content_posts import POSTS, AUTHOR
 SITE = 'https://apps.shipit.group'
 DEFAULT_LANG = 'en'
 LANGS = ['en', 'fr']
-APP_ORDER = ['zen24', 'scalequest', 'mijo', 'ik']   # Pip volontairement absente
+APP_ORDER = ['zen24', 'scalequest', 'mijo', 'first', 'ik']   # Pip volontairement absente
 TODAY = datetime.date.today().isoformat()
 
 FROZEN = ['*/support.html', '*/legal/*', 'css/style.css', 'assets/icons/*', 'ik/bareme.json',
@@ -56,16 +56,16 @@ def human_date(d, lang):
     return f'{dd} {MONTHS[lang][m-1]} {y}' if lang == 'fr' else f'{dd} {MONTHS[lang][m-1]} {y}'
 
 HOME = {
- 'en': dict(title='SHIP IT — iOS apps for everyday life', desc='SHIP IT builds focused iPhone apps: Zen24 for Beds24 hosts, Riffo guitar lessons, Mijo meal planner and IK mileage allowances.',
+ 'en': dict(title='SHIP IT — iOS apps for everyday life', desc='SHIP IT builds focused iPhone apps: Zen24 for Beds24 hosts, Riffo guitar lessons, Mijo meal planner, First Bible verse app and IK mileage allowances.',
             label='Independent studio · iOS apps', h1='Apps that do one thing. Really well.',
-            lead='Run your Beds24 rentals, learn guitar scales, plan the week’s dinners, claim your mileage. iPhone apps, each built for a single job.',
+            lead='Run your Beds24 rentals, learn guitar scales, plan the week’s dinners, read a Bible verse before your apps, claim your mileage. iPhone apps, each built for a single job.',
             cta1='See our apps', cta2='Read the journal', apps_t='Our apps', apps_meta='iPhone · iOS 18 or later',
             journal_eyebrow='The journal', journal_t='Guides, comparisons, alternatives', journal_lead='Every app has its own blog. The latest articles, across all apps.',
             studio_eyebrow='The studio', studio_t='Small apps, big attention to detail.',
             principles=[('One job, one app', 'No catch-all suite: each app solves one specific problem, from the first screen to the last.'), ('Made for iPhone', 'Built for iOS 18 and later, with the gestures and conventions you already know.'), ('A human replies', 'A question, a bug, an idea: write to contact@shipit.group — we read every message.')]),
- 'fr': dict(title='SHIP IT — Apps iOS pour le quotidien', desc='SHIP IT conçoit des apps iPhone utiles : Zen24 pour les hôtes Beds24, Riffo pour apprendre la guitare, Mijo pour les menus de la semaine et IK pour les indemnités kilométriques.',
+ 'fr': dict(title='SHIP IT — Apps iOS pour le quotidien', desc='SHIP IT conçoit des apps iPhone utiles : Zen24 pour les hôtes Beds24, Riffo pour apprendre la guitare, Mijo pour les menus de la semaine, First pour lire un verset avant ses apps et IK pour les indemnités kilométriques.',
             label='Studio indépendant · apps iOS', h1='Des apps qui font une chose. Très bien.',
-            lead='Gérer ses locations Beds24, apprendre ses gammes, planifier les dîners, déclarer ses kilomètres. Des apps iPhone pensées chacune pour un seul usage.',
+            lead='Gérer ses locations Beds24, apprendre ses gammes, planifier les dîners, lire un verset avant ses apps, déclarer ses kilomètres. Des apps iPhone pensées chacune pour un seul usage.',
             cta1='Voir nos apps', cta2='Lire le journal', apps_t='Nos apps', apps_meta='iPhone · iOS 18 et plus',
             journal_eyebrow='Le journal', journal_t='Guides, comparatifs, alternatives', journal_lead='Chaque app a son propre blog. Les derniers articles, toutes apps confondues.',
             studio_eyebrow='Le studio', studio_t='Petites apps, grand soin du détail.',
@@ -75,10 +75,12 @@ HOME_APPS = {
  'en': {'zen24': ('Property management · Beds24', 'Arrivals, calendar, messages and KPIs for your Beds24 properties, in your pocket.', 'Free · Premium', '5 languages'),
         'scalequest': ('Music · Learning', 'Learn guitar step by step: you play, the app listens.', 'Subscription · 7-day trial', '3 languages'),
         'mijo': ('Food · Meal planning', 'The week’s dinners and the grocery list, ready in 30 seconds.', 'Free · Subscription', '5 languages'),
+        'first': ('Faith · Screen time', 'A Bible verse before your apps: they stay locked until you read it.', 'Subscription · 3-day trial', '5 languages'),
         'ik': ('Finance · French tax', 'Business trips tracked by GPS and computed with the official French mileage scale.', 'Free · Subscription', 'French')},
  'fr': {'zen24': ('Gestion locative · Beds24', 'Arrivées, calendrier, messages et KPI de vos propriétés Beds24, dans votre poche.', 'Gratuit · Premium', '5 langues'),
         'scalequest': ('Musique · Apprentissage', 'Apprenez la guitare pas à pas : vous jouez, l’app écoute.', 'Abonnement · essai 7 jours', '3 langues'),
         'mijo': ('Cuisine · Menus de la semaine', 'Les dîners de la semaine et la liste de courses, prêts en 30 secondes.', 'Gratuit · Abonnement', '5 langues'),
+        'first': ('Foi · Temps d’écran', 'Un verset de la Bible avant vos apps : elles restent verrouillées jusqu’à la lecture.', 'Abonnement · essai 3 jours', '5 langues'),
         'ik': ('Finances · Frais réels', 'Vos trajets pros suivis au GPS et calculés au barème officiel, export PDF compris.', 'Gratuit · Abonnement', 'Français')},
 }
 CARD_ART = {'zen24-vs': 'vs', 'zen24-alt': 'alt.', 'sq-pentatonique': '5×', 'mijo-menu': '30 s', 'ik-bareme': 'km'}
@@ -192,7 +194,7 @@ def header_app(app, lang, alts, blog=False):
         nav = f'<a href="{u_app(app, lang)}">{t["the_app"]}</a><a href="{u_blog(app, lang)}">{t["articles"]}</a>'
     else:
         brand = f'<a class="brand" href="{u_home(lang)}" aria-label="SHIP IT"><span class="brand__mark" aria-hidden="true"></span><span class="brand__name">SHIP IT</span></a>'
-        nav = f'<a href="#features">{t["features"]}</a>' + (f'<a href="#pricing">{t["pricing"]}</a>' if a['i18n'][lang].get('plans') else '') + f'<a href="{u_blog(app, lang)}">{t["blog"]}</a><a href="#faq">{t["faq"]}</a>'
+        nav = f'<a href="#features">{t["features"]}</a>' + (f'<a href="#pricing">{t["pricing"]}</a>' if a['i18n'][lang].get('plans') else '') + (f'<a href="{u_blog(app, lang)}">{t["blog"]}</a>' if posts_for(app, lang) else '') + f'<a href="#faq">{t["faq"]}</a>'
     return f'''<header class="site-header"><div class="wrap site-header__in">
 {brand}
 <nav class="nav" aria-label="{e(a["name"])}">{nav}<a class="btn-store" href="{a["store"][lang]}">{t["download"]}</a>{lang_switch(lang, alts)}</nav>
@@ -204,10 +206,14 @@ def legal_links(app, lang):
             f'<a href="{u_frozen(app, "legal/privacy.html")}">{t["privacy"]}</a>'
             f'<a href="{u_frozen(app, "legal/terms.html")}">{t["terms"]}</a>')
 
+def blog_link(a, lang):
+    bl = lang if lang in APPS[a]['langs'] else root_lang(a)
+    return f'<a href="{u_blog(a, bl)}">{UI[lang]["blog"]}</a>' if posts_for(a, bl) else ''
+
 def footer_app(app, lang):
     a = APPS[app]; t = UI[lang]
     return f'''<footer class="site-footer"><div class="wrap footer-compact">
-<span>© 2026 SHIP IT · <a href="{u_home(lang)}">{t["all_apps"]}</a> · <a href="{u_blog(app, lang)}">{t["blog"]} {e(a["name"])}</a></span>
+<span>© 2026 SHIP IT · <a href="{u_home(lang)}">{t["all_apps"]}</a>{f' · <a href="{u_blog(app, lang)}">{t["blog"]} {e(a["name"])}</a>' if posts_for(app, lang) else ''}</span>
 <nav aria-label="{e(a["name"])}">{legal_links(app, lang)}<a href="{u_legal(lang)}">{t["legal_notice"]}</a><a href="mailto:contact@shipit.group">contact@shipit.group</a></nav>
 </div></footer>
 </body>
@@ -325,7 +331,7 @@ def page_home(lang):
 <div class="post-card__body"><div class="post-card__meta"><span class="chip">{e(APPS[p['app']]['name'])}</span><span>{e(p['cat'])}</span><span aria-hidden="true">·</span><span>{e(p['read'])}</span></div>
 <h3 class="h3"><a href="{u_post(p)}"{f' hreflang="{p["lang"]}"' if p['lang'] != lang else ''}>{e(p['title'])}</a></h3><p class="muted" style="margin:0;font-size:15px;line-height:1.55">{e(p['desc'])}</p></div></article>''')
     princ = ''.join(f'<div><h3>{e(a)}</h3><p>{e(b)}</p></div>' for a, b in h['principles'])
-    foot_cols = ''.join(f'''<div><p class="t">{e(APPS[a]['name'])}</p><a href="{u_app(a, lang if lang in APPS[a]['langs'] else root_lang(a))}">{'Overview' if lang == 'en' else 'Présentation'}</a><a href="{u_blog(a, lang if lang in APPS[a]['langs'] else root_lang(a))}">{t['blog']}</a>{legal_links(a, lang)}</div>''' for a in apps)
+    foot_cols = ''.join(f'''<div><p class="t">{e(APPS[a]['name'])}</p><a href="{u_app(a, lang if lang in APPS[a]['langs'] else root_lang(a))}">{'Overview' if lang == 'en' else 'Présentation'}</a>{blog_link(a, lang)}{legal_links(a, lang)}</div>''' for a in apps)
     body = f'''{header_studio(lang, alts)}
 <main id="main">
 <section class="wrap home-hero" aria-labelledby="hero-t">

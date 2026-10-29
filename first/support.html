@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First — Support</title>
+  <meta name="description" content="Get help with First: locked apps, Screen Time, emergency unlock, subscription and privacy.">
+  <meta name="theme-color" content="#f6f5f1">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../assets/icons/first.png" type="image/png">
+  <style>
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    .lang-switch { position: fixed; top: 12px; right: 12px; background: #f0f0f0; border-radius: 8px; padding: 4px; font-size: 13px; display: flex; gap: 2px; z-index: 200; }
+    .lang-switch button { border: none; background: none; padding: 4px 8px; border-radius: 6px; cursor: pointer; font-size: 13px; font-family: inherit; color: inherit; }
+    .lang-switch button.active { background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); font-weight: 600; }
+    .lang-switch { top: auto; bottom: 12px; }
+  </style>
+</head>
+<body>
+    <div class="lang-switch">
+        <button id="btn-fr" onclick="setLang('fr')">FR</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+        <button id="btn-es" onclick="setLang('es')">ES</button>
+        <button id="btn-it" onclick="setLang('it')">IT</button>
+        <button id="btn-pt" onclick="setLang('pt')">PT</button>
+    </div>
+
+  <nav class="nav animate-in">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__back">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+          First
+        </a>
+        <a href="../index.html" class="nav__brand">SHIP IT</a>
+      </div>
+    </div>
+  </nav>
+
+<div id="lang-fr" class="lang-section">
+  <!-- Hero -->
+  <header class="support-hero">
+    <div class="container container--narrow">
+      <img src="../assets/icons/first.png" alt="Icône de l’app First" class="support-hero__icon animate-in">
+      <h1 class="display-lg animate-in animate-in-delay-1">Support</h1>
+      <p class="text-soft text-lg animate-in animate-in-delay-2">Trouvez les réponses aux questions fréquentes ci-dessous.</p>
+    </div>
+  </header>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container container--narrow">
+      <div class="faq-section__header animate-in">
+        <div class="divider"></div>
+        <h2 class="display-md">Questions fréquentes</h2>
+      </div>
+
+      <div class="faq-list">
+          <details class="faq-item animate-in animate-in-delay-1">
+            <summary>Comment fonctionne First ?</summary>
+            <div class="faq-item__body">
+              <p>Dieu d’abord. Tes apps ensuite. « Cherchez premièrement le royaume de Dieu » (Matthieu 6:33). Les apps que vous choisissez restent verrouillées jusqu’à la lecture du verset du jour : environ 30 secondes avec un verset, une réflexion, une prière et un quiz facultatif. Ensuite, vos apps se débloquent.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-2">
+            <summary>Comment changer les apps verrouillées ?</summary>
+            <div class="faq-item__body">
+              <p>Ouvrez les réglages de First, puis « Apps bloquées » et touchez « Modifier ». Vous choisissez vos apps dans le sélecteur d’Apple. Les horaires de blocage se règlent au même endroit.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-3">
+            <summary>Et en cas d’urgence ?</summary>
+            <div class="faq-item__body">
+              <p>Un déblocage d’urgence de 15 minutes est disponible à tout moment, directement depuis l’écran de blocage.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-4">
+            <summary>First voit-il mes apps ou ce que j’y fais ?</summary>
+            <div class="faq-item__body">
+              <p>Non. Le verrouillage passe par Temps d’écran d’Apple : First ne reçoit que des jetons opaques et ne voit ni le nom de vos apps ni l’usage que vous en faites.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>Que comprend First Premium ?</summary>
+            <div class="faq-item__body">
+              <p>First Premium donne accès au blocage des apps, aux widgets et aux plans de lecture. Deux formules : annuelle à 39,99 € avec 3 jours d’essai gratuit, ou mensuelle à 6,99 €. Le prix applicable est affiché dans l’app avant l’achat.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>Comment restaurer ou résilier mon abonnement ?</summary>
+            <div class="faq-item__body">
+              <p>Pour restaurer, ouvrez les réglages de First et touchez « Restaurer les achats » avec le même identifiant Apple. Pour résilier, ouvrez Réglages sur votre iPhone, touchez votre nom, puis Abonnements, et choisissez First, au moins 24 heures avant la fin de la période en cours.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>Que deviennent mes données ?</summary>
+            <div class="faq-item__body">
+              <p>First n’a pas de compte. Vos séances, favoris et réglages restent sur votre iPhone, sans iCloud ni serveur First. Seules des statistiques d’usage anonymes sont mesurées. Voir notre <a href="legal/privacy.html?lang=fr">politique de confidentialité</a>.</p>
+            </div>
+          </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-card animate-in">
+        <h2 class="contact-card__title">Besoin d’aide ?</h2>
+        <p class="contact-card__desc">Notre équipe est là pour vous aider. Écrivez-nous et nous vous répondrons au plus vite.</p>
+        <a href="mailto:contact@shipit.group" class="contact-card__email">
+          ✉ contact@shipit.group
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Links -->
+  <section class="links-section">
+    <div class="container container--narrow">
+      <div class="links-grid">
+        <a href="legal/index.html?lang=fr" class="link-card">
+          <span class="link-card__icon">📄</span>
+          <span class="link-card__text">Confidentialité &amp; conditions</span>
+          <span class="link-card__arrow">&rarr;</span>
+        </a>
+        <a href="https://apps.apple.com/app/id6822062329" class="link-card" target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon">📱</span>
+          <span class="link-card__text">Voir sur l’App Store</span>
+          <span class="link-card__arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">&copy; 2026 <a href="mailto:contact@shipit.group">SHIP IT</a>. Tous droits réservés.</p>
+    </div>
+  </footer>
+</div>
+
+<div id="lang-en" class="lang-section">
+  <!-- Hero -->
+  <header class="support-hero">
+    <div class="container container--narrow">
+      <img src="../assets/icons/first.png" alt="First app icon" class="support-hero__icon animate-in">
+      <h1 class="display-lg animate-in animate-in-delay-1">Support</h1>
+      <p class="text-soft text-lg animate-in animate-in-delay-2">Find answers to common questions below.</p>
+    </div>
+  </header>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container container--narrow">
+      <div class="faq-section__header animate-in">
+        <div class="divider"></div>
+        <h2 class="display-md">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+          <details class="faq-item animate-in animate-in-delay-1">
+            <summary>How does First work?</summary>
+            <div class="faq-item__body">
+              <p>God first. Your apps next. “Seek ye first the kingdom of God” (Matthew 6:33). The apps you choose stay locked until you read the verse of the day: about 30 seconds with a verse, a reflection, a prayer and an optional quiz. Then your apps unlock.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-2">
+            <summary>How do I change the locked apps?</summary>
+            <div class="faq-item__body">
+              <p>Open First’s settings, then “Locked apps”, and tap “Edit”. You pick your apps in Apple’s picker. The blocking schedule is set in the same place.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-3">
+            <summary>What if it’s an emergency?</summary>
+            <div class="faq-item__body">
+              <p>A 15-minute emergency unlock is available at any time, right from the shield screen.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-4">
+            <summary>Can First see my apps or what I do in them?</summary>
+            <div class="faq-item__body">
+              <p>No. Locking goes through Apple’s Screen Time: First only receives opaque tokens and cannot see the names of your apps or how you use them.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>What does First Premium include?</summary>
+            <div class="faq-item__body">
+              <p>First Premium gives access to app blocking, widgets and reading plans. Two plans: yearly at €39.99 with a 3-day free trial, or monthly at €6.99. The applicable price is shown in the app before purchase.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>How do I restore or cancel my subscription?</summary>
+            <div class="faq-item__body">
+              <p>To restore, open First’s settings and tap “Restore purchases” with the same Apple ID. To cancel, open Settings on your iPhone, tap your name, then Subscriptions, and choose First, at least 24 hours before the end of the current period.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>What happens to my data?</summary>
+            <div class="faq-item__body">
+              <p>First has no account. Your sessions, favorites and settings stay on your iPhone, with no iCloud and no First server. Only anonymous usage statistics are measured. See our <a href="legal/privacy.html?lang=en">Privacy Policy</a>.</p>
+            </div>
+          </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-card animate-in">
+        <h2 class="contact-card__title">Still need help?</h2>
+        <p class="contact-card__desc">Our team is happy to assist you. Reach out and we'll get back to you as soon as possible.</p>
+        <a href="mailto:contact@shipit.group" class="contact-card__email">
+          ✉ contact@shipit.group
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Links -->
+  <section class="links-section">
+    <div class="container container--narrow">
+      <div class="links-grid">
+        <a href="legal/index.html?lang=en" class="link-card">
+          <span class="link-card__icon">📄</span>
+          <span class="link-card__text">Privacy &amp; Terms</span>
+          <span class="link-card__arrow">&rarr;</span>
+        </a>
+        <a href="https://apps.apple.com/app/id6822062329" class="link-card" target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon">📱</span>
+          <span class="link-card__text">View on App Store</span>
+          <span class="link-card__arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">&copy; 2026 <a href="mailto:contact@shipit.group">SHIP IT</a>. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+<div id="lang-es" class="lang-section">
+  <!-- Hero -->
+  <header class="support-hero">
+    <div class="container container--narrow">
+      <img src="../assets/icons/first.png" alt="Icono de la app First" class="support-hero__icon animate-in">
+      <h1 class="display-lg animate-in animate-in-delay-1">Support</h1>
+      <p class="text-soft text-lg animate-in animate-in-delay-2">Encuentra a continuación las respuestas a las preguntas frecuentes.</p>
+    </div>
+  </header>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container container--narrow">
+      <div class="faq-section__header animate-in">
+        <div class="divider"></div>
+        <h2 class="display-md">Preguntas frecuentes</h2>
+      </div>
+
+      <div class="faq-list">
+          <details class="faq-item animate-in animate-in-delay-1">
+            <summary>¿Cómo funciona First?</summary>
+            <div class="faq-item__body">
+              <p>Dios primero. Tus apps después. «Buscad primeramente el reino de Dios» (Mateo 6:33). Las apps que eliges permanecen bloqueadas hasta que lees el versículo del día: unos 30 segundos con un versículo, una reflexión, una oración y un cuestionario opcional. Después, tus apps se desbloquean.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-2">
+            <summary>¿Cómo cambio las apps bloqueadas?</summary>
+            <div class="faq-item__body">
+              <p>Abre los ajustes de First, luego «Apps bloqueadas» y toca «Editar». Eliges tus apps en el selector de Apple. El horario de bloqueo se ajusta en el mismo lugar.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-3">
+            <summary>¿Y en caso de emergencia?</summary>
+            <div class="faq-item__body">
+              <p>Tienes un desbloqueo de emergencia de 15 minutos disponible en cualquier momento, directamente desde la pantalla de bloqueo.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-4">
+            <summary>¿First ve mis apps o lo que hago en ellas?</summary>
+            <div class="faq-item__body">
+              <p>No. El bloqueo pasa por Tiempo de uso de Apple: First solo recibe identificadores opacos y no ve el nombre de tus apps ni el uso que haces de ellas.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>¿Qué incluye First Premium?</summary>
+            <div class="faq-item__body">
+              <p>First Premium da acceso al bloqueo de apps, a los widgets y a los planes de lectura. Dos planes: anual a 39,99 € con 3 días de prueba gratuita, o mensual a 6,99 €. El precio aplicable se muestra en la app antes de la compra.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>¿Cómo restauro o cancelo mi suscripción?</summary>
+            <div class="faq-item__body">
+              <p>Para restaurar, abre los ajustes de First y toca «Restaurar compras» con el mismo Apple ID. Para cancelar, abre Ajustes en tu iPhone, toca tu nombre, luego Suscripciones y elige First, al menos 24 horas antes del final del periodo en curso.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>¿Qué pasa con mis datos?</summary>
+            <div class="faq-item__body">
+              <p>First no tiene cuenta. Tus sesiones, favoritos y ajustes se quedan en tu iPhone, sin iCloud ni servidor de First. Solo se miden estadísticas de uso anónimas. Consulta nuestra <a href="legal/privacy.html?lang=es">política de privacidad</a>.</p>
+            </div>
+          </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-card animate-in">
+        <h2 class="contact-card__title">¿Necesitas más ayuda?</h2>
+        <p class="contact-card__desc">Nuestro equipo está encantado de ayudarte. Escríbenos y te responderemos lo antes posible.</p>
+        <a href="mailto:contact@shipit.group" class="contact-card__email">
+          ✉ contact@shipit.group
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Links -->
+  <section class="links-section">
+    <div class="container container--narrow">
+      <div class="links-grid">
+        <a href="legal/index.html?lang=es" class="link-card">
+          <span class="link-card__icon">📄</span>
+          <span class="link-card__text">Privacidad y condiciones</span>
+          <span class="link-card__arrow">&rarr;</span>
+        </a>
+        <a href="https://apps.apple.com/app/id6822062329" class="link-card" target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon">📱</span>
+          <span class="link-card__text">Ver en la App Store</span>
+          <span class="link-card__arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">&copy; 2026 <a href="mailto:contact@shipit.group">SHIP IT</a>. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</div>
+
+<div id="lang-it" class="lang-section">
+  <!-- Hero -->
+  <header class="support-hero">
+    <div class="container container--narrow">
+      <img src="../assets/icons/first.png" alt="Icona dell’app First" class="support-hero__icon animate-in">
+      <h1 class="display-lg animate-in animate-in-delay-1">Support</h1>
+      <p class="text-soft text-lg animate-in animate-in-delay-2">Trova qui sotto le risposte alle domande più frequenti.</p>
+    </div>
+  </header>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container container--narrow">
+      <div class="faq-section__header animate-in">
+        <div class="divider"></div>
+        <h2 class="display-md">Domande frequenti</h2>
+      </div>
+
+      <div class="faq-list">
+          <details class="faq-item animate-in animate-in-delay-1">
+            <summary>Come funziona First?</summary>
+            <div class="faq-item__body">
+              <p>Prima Dio. Poi le tue app. «Cercate prima il regno di Dio» (Matteo 6:33). Le app che scegli restano bloccate finché non leggi il versetto del giorno: circa 30 secondi con un versetto, una riflessione, una preghiera e un quiz facoltativo. Poi le tue app si sbloccano.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-2">
+            <summary>Come cambio le app bloccate?</summary>
+            <div class="faq-item__body">
+              <p>Apri le impostazioni di First, poi «App bloccate» e tocca «Modifica». Scegli le tue app nel selettore di Apple. Le fasce orarie di blocco si impostano nello stesso punto.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-3">
+            <summary>E in caso di emergenza?</summary>
+            <div class="faq-item__body">
+              <p>Uno sblocco d’emergenza di 15 minuti è disponibile in qualsiasi momento, direttamente dalla schermata di blocco.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-4">
+            <summary>First vede le mie app o cosa ci faccio?</summary>
+            <div class="faq-item__body">
+              <p>No. Il blocco passa da Tempo di utilizzo di Apple: First riceve solo identificativi opachi e non vede il nome delle tue app né l’uso che ne fai.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>Cosa include First Premium?</summary>
+            <div class="faq-item__body">
+              <p>First Premium dà accesso al blocco delle app, ai widget e ai piani di lettura. Due piani: annuale a 39,99 € con 3 giorni di prova gratuita, oppure mensile a 6,99 €. Il prezzo applicabile è indicato nell’app prima dell’acquisto.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>Come ripristino o disdico l’abbonamento?</summary>
+            <div class="faq-item__body">
+              <p>Per ripristinare, apri le impostazioni di First e tocca «Ripristina acquisti» con lo stesso ID Apple. Per disdire, apri Impostazioni sul tuo iPhone, tocca il tuo nome, poi Abbonamenti e scegli First, almeno 24 ore prima della fine del periodo in corso.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>Che fine fanno i miei dati?</summary>
+            <div class="faq-item__body">
+              <p>First non ha account. Le tue sessioni, i preferiti e le impostazioni restano sul tuo iPhone, senza iCloud né server di First. Vengono misurate solo statistiche d’uso anonime. Consulta la nostra <a href="legal/privacy.html?lang=it">informativa sulla privacy</a>.</p>
+            </div>
+          </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-card animate-in">
+        <h2 class="contact-card__title">Serve altro aiuto?</h2>
+        <p class="contact-card__desc">Il nostro team è felice di aiutarti. Scrivici e ti risponderemo il prima possibile.</p>
+        <a href="mailto:contact@shipit.group" class="contact-card__email">
+          ✉ contact@shipit.group
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Links -->
+  <section class="links-section">
+    <div class="container container--narrow">
+      <div class="links-grid">
+        <a href="legal/index.html?lang=it" class="link-card">
+          <span class="link-card__icon">📄</span>
+          <span class="link-card__text">Privacy e condizioni</span>
+          <span class="link-card__arrow">&rarr;</span>
+        </a>
+        <a href="https://apps.apple.com/app/id6822062329" class="link-card" target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon">📱</span>
+          <span class="link-card__text">Vedi su App Store</span>
+          <span class="link-card__arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">&copy; 2026 <a href="mailto:contact@shipit.group">SHIP IT</a>. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+</div>
+
+<div id="lang-pt" class="lang-section">
+  <!-- Hero -->
+  <header class="support-hero">
+    <div class="container container--narrow">
+      <img src="../assets/icons/first.png" alt="Ícone do app First" class="support-hero__icon animate-in">
+      <h1 class="display-lg animate-in animate-in-delay-1">Support</h1>
+      <p class="text-soft text-lg animate-in animate-in-delay-2">Encontre abaixo as respostas para as perguntas frequentes.</p>
+    </div>
+  </header>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container container--narrow">
+      <div class="faq-section__header animate-in">
+        <div class="divider"></div>
+        <h2 class="display-md">Perguntas frequentes</h2>
+      </div>
+
+      <div class="faq-list">
+          <details class="faq-item animate-in animate-in-delay-1">
+            <summary>Como o First funciona?</summary>
+            <div class="faq-item__body">
+              <p>Deus primeiro. Seus apps depois. «Buscai primeiro o reino de Deus» (Mateus 6:33). Os apps que você escolhe ficam bloqueados até você ler o versículo do dia: cerca de 30 segundos com um versículo, uma reflexão, uma oração e um quiz opcional. Depois, seus apps são desbloqueados.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-2">
+            <summary>Como mudo os apps bloqueados?</summary>
+            <div class="faq-item__body">
+              <p>Abra os ajustes do First, depois «Apps bloqueados» e toque em «Editar». Você escolhe seus apps no seletor da Apple. Os horários de bloqueio são ajustados no mesmo lugar.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-3">
+            <summary>E em caso de emergência?</summary>
+            <div class="faq-item__body">
+              <p>Um desbloqueio de emergência de 15 minutos está disponível a qualquer momento, direto na tela de bloqueio.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-4">
+            <summary>O First vê meus apps ou o que faço neles?</summary>
+            <div class="faq-item__body">
+              <p>Não. O bloqueio passa pelo Tempo de Uso da Apple: o First recebe apenas identificadores opacos e não vê o nome dos seus apps nem o uso que você faz deles.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>O que o First Premium inclui?</summary>
+            <div class="faq-item__body">
+              <p>O First Premium dá acesso ao bloqueio de apps, aos widgets e aos planos de leitura. Dois planos: anual por 39,99 € com 3 dias de teste grátis, ou mensal por 6,99 €. O preço aplicável é exibido no app antes da compra.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>Como restauro ou cancelo minha assinatura?</summary>
+            <div class="faq-item__body">
+              <p>Para restaurar, abra os ajustes do First e toque em «Restaurar compras» com o mesmo ID Apple. Para cancelar, abra Ajustes no iPhone, toque no seu nome, depois em Assinaturas e escolha First, pelo menos 24 horas antes do fim do período atual.</p>
+            </div>
+          </details>
+          <details class="faq-item animate-in animate-in-delay-5">
+            <summary>O que acontece com meus dados?</summary>
+            <div class="faq-item__body">
+              <p>O First não tem conta. Suas sessões, favoritos e ajustes ficam no seu iPhone, sem iCloud nem servidor do First. Apenas estatísticas de uso anônimas são medidas. Veja nossa <a href="legal/privacy.html?lang=pt">política de privacidade</a>.</p>
+            </div>
+          </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-card animate-in">
+        <h2 class="contact-card__title">Ainda precisa de ajuda?</h2>
+        <p class="contact-card__desc">Nossa equipe está pronta para ajudar. Escreva para nós e responderemos o mais rápido possível.</p>
+        <a href="mailto:contact@shipit.group" class="contact-card__email">
+          ✉ contact@shipit.group
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Links -->
+  <section class="links-section">
+    <div class="container container--narrow">
+      <div class="links-grid">
+        <a href="legal/index.html?lang=pt" class="link-card">
+          <span class="link-card__icon">📄</span>
+          <span class="link-card__text">Privacidade e termos</span>
+          <span class="link-card__arrow">&rarr;</span>
+        </a>
+        <a href="https://apps.apple.com/app/id6822062329" class="link-card" target="_blank" rel="noopener noreferrer">
+          <span class="link-card__icon">📱</span>
+          <span class="link-card__text">Ver na App Store</span>
+          <span class="link-card__arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">&copy; 2026 <a href="mailto:contact@shipit.group">SHIP IT</a>. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</div>
+
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll('.lang-section').forEach(function(s) { s.classList.remove('active'); });
+            document.querySelectorAll('.lang-switch button').forEach(function(b) { b.classList.remove('active'); });
+            document.getElementById('lang-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+            document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
+        }
+        var params = new URLSearchParams(window.location.search);
+        var paramLang = (params.get('lang') || '').toLowerCase();
+        var userLang = paramLang || (navigator.language || 'en').toLowerCase();
+        var supported = ['fr', 'en', 'es', 'it', 'pt'];
+        var chosen = 'en';
+        for (var i = 0; i < supported.length; i++) {
+            if (userLang.indexOf(supported[i]) === 0) { chosen = supported[i]; break; }
+        }
+        setLang(chosen);
+    </script>
+</body>
+</html>
