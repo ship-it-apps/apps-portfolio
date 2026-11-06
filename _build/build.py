@@ -128,7 +128,12 @@ def post_alts(p):
     return {q['lang']: u_post(q) for q in POSTS if q['key'] == p['key']}
 
 # ------------------------------------------------------------------ head / chrome
-LANG_SCRIPT = """<script>(function(){var d=document.documentElement,L=d.lang,A=%s,S=['en','fr'];function g(){try{return localStorage.getItem('lang')}catch(e){return null}}function s(v){try{localStorage.setItem('lang',v)}catch(e){}}var q=(new URLSearchParams(location.search).get('lang')||'').slice(0,2).toLowerCase();if(q&&A[q]){s(q);if(q!==L)location.replace(A[q]);return}if(/bot|crawl|spider|slurp|lighthouse|preview/i.test(navigator.userAgent))return;var p=g();if(p){if(p!==L&&A[p])location.replace(A[p]);return}var n=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en']).map(function(x){return String(x).slice(0,2).toLowerCase()});var w='en';for(var i=0;i<n.length;i++){if(S.indexOf(n[i])>-1){w=n[i];break}}if(w!==L&&A[w])location.replace(A[w]);document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a[data-lang]');if(a)s(a.getAttribute('data-lang'))})})();</script>"""
+# The click listener is registered before every return. It used to sit after the
+# saved-language return, so a[data-lang] never wrote localStorage and the next
+# page bounced back. Switcher hrefs carry ?lang=, which is applied first, saved,
+# then removed (replaceState on the matching page, location.replace to the clean
+# alternate otherwise) so the choice sticks without a redirect loop.
+LANG_SCRIPT = """<script>(function(){var d=document.documentElement,L=d.lang,A=%s,S=['en','fr'];function g(){try{return localStorage.getItem('lang')}catch(e){return null}}function s(v){try{localStorage.setItem('lang',v)}catch(e){}}document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a[data-lang]');if(a)s(a.getAttribute('data-lang'))});var q=(new URLSearchParams(location.search).get('lang')||'').slice(0,2).toLowerCase();if(q&&A[q]){s(q);if(q!==L){location.replace(A[q]);return}try{var u=new URL(location.href);u.searchParams.delete('lang');history.replaceState(null,'',u.pathname+u.search+u.hash)}catch(e){}return}if(/bot|crawl|spider|slurp|lighthouse|preview/i.test(navigator.userAgent))return;var p=g();if(p){if(p!==L&&A[p])location.replace(A[p]);return}var n=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en']).map(function(x){return String(x).slice(0,2).toLowerCase()});var w='en';for(var i=0;i<n.length;i++){if(S.indexOf(n[i])>-1){w=n[i];break}}if(w!==L&&A[w])location.replace(A[w])})();</script>"""
 
 def head(lang, title, desc, path, alts, jsonld, og_image, colors=None, extra=''):
     alts = alts or {lang: path}
@@ -177,7 +182,7 @@ DL = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="t
 def lang_switch(lang, alts):
     if not alts or len(alts) < 2:
         return ''
-    items = ''.join(f'<a href="{alts[l]}" hreflang="{l}" lang="{l}" data-lang="{l}"{" aria-current=\"true\"" if l == lang else ""}>{l.upper()}</a>' for l in LANGS if l in alts)
+    items = ''.join(f'<a href="{alts[l]}?lang={l}" hreflang="{l}" lang="{l}" data-lang="{l}"{" aria-current=\"true\"" if l == lang else ""}>{l.upper()}</a>' for l in LANGS if l in alts)
     return f'<div class="lang" role="group" aria-label="Language">{items}</div>'
 
 def header_studio(lang, alts):
@@ -356,7 +361,7 @@ def page_home(lang):
 <footer class="site-footer"><div class="wrap">
 <div class="footer-grid">{foot_cols}</div>
 <p class="wordmark" aria-hidden="true">SHIP IT<span>.</span></p>
-<div class="footer-bottom"><span>© 2026 SHIP IT</span><nav aria-label="SHIP IT"><a href="mailto:contact@shipit.group">contact@shipit.group</a><a href="{u_legal(lang)}">{t['legal_notice']}</a>{''.join(f'<a href="{u_home(l)}" hreflang="{l}" lang="{l}" data-lang="{l}">{UI[l]["lang_name"]}</a>' for l in LANGS if l != lang)}</nav></div>
+<div class="footer-bottom"><span>© 2026 SHIP IT</span><nav aria-label="SHIP IT"><a href="mailto:contact@shipit.group">contact@shipit.group</a><a href="{u_legal(lang)}">{t['legal_notice']}</a>{''.join(f'<a href="{u_home(l)}?lang={l}" hreflang="{l}" lang="{l}" data-lang="{l}">{UI[l]["lang_name"]}</a>' for l in LANGS if l != lang)}</nav></div>
 </div></footer>
 </body>
 </html>
