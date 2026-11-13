@@ -194,6 +194,54 @@ APPS = {
    ),
   },
 },
+# ------------------------------------------------------------------ MAGIC TRANSCRIBE
+# Page produit = URL marketing App Store : pas de prix, ni « gratuit », ni essai (règle 2.3.7) ;
+# les prix figurent seulement dans support.html et legal/terms.html.
+'magictranscribe': {
+  'name': 'Magic Transcribe', 'langs': ['en', 'fr'], 'icon': '/assets/icons/magictranscribe.png', 'os': 'iOS 26.0',
+  'store': {'en': 'https://apps.apple.com/app/id6834171315', 'fr': 'https://apps.apple.com/fr/app/id6834171315'},
+  'category': 'ProductivityApplication', 'offers': [('8.99', 'EUR'), ('54.90', 'EUR')],
+  'colors': dict(strong='#3B3BEF', bright='#A9A9FF', tint='#E8EBFF', wash='#F3F4FF', deep='#0C0D12', ondark='#A9A9FF', mutedd='#C9CCD3', bord='#262A38', panel='linear-gradient(160deg,#3B3BEF,#1E1EA6)', inktint='#1E1EA6'),
+  'shots': ['01-bienvenue', '02-accueil', '03-resume', '04-transcription'],
+  'shot_prefix': 'magictranscribe_', 'hero_shot': '02-accueil', 'video': None,
+  'shot_lang_fallback': 'fr',  # TODO: captures anglaises de Magic Transcribe non disponibles
+  'i18n': {
+   'fr': dict(
+     title='Magic Transcribe — transcrire vos notes vocales et réunions sur iPhone',
+     desc='Magic Transcribe transcrit vos notes vocales en direct sur l’iPhone, même hors ligne, puis les résume et en sort les tâches. Import des vocaux WhatsApp et mémos vocaux. Sans compte, rien ne quitte l’iPhone.',
+     full_name='Magic Transcribe — Notes vocales en texte', sub='iPhone · iOS 26 et plus · FR, EN, DE, ES, IT, PT',
+     h1='Vous parlez. Bibo écrit et résume.',
+     lead='Magic Transcribe transcrit vos notes vocales et vos réunions en direct sur l’iPhone, puis en tire un résumé, les tâches à faire et des chapitres. Bibo le castor s’occupe de tout, sans rien envoyer à un serveur.',
+     price_line='Abonnement requis · sans compte · vos notes restent sur votre iPhone',
+     shot_alts=['Bibo, ta mascotte et ton dictaphone', 'Accueil : vos notes et les tâches tirées de vos notes', 'Le résumé et les tâches d’une réunion', 'La transcription découpée en chapitres'],
+     feat_title='Vos notes vocales, enfin relues.',
+     features=[('Transcription en direct', 'Appuyez sur le bouton rouge et parlez : le texte s’écrit pendant que vous parlez, même hors ligne, grâce à la reconnaissance vocale d’Apple sur l’iPhone.'), ('Résumé, tâches et chapitres', 'À la fin, Bibo donne un titre à la note, la résume, sort les tâches à faire et la découpe en chapitres, directement sur l’appareil.'), ('Vocaux WhatsApp et mémos vocaux', 'Importez vos fichiers audio (m4a, mp3, wav, opus…) ou partagez un vocal depuis WhatsApp ou Mémos vocaux vers Magic Scribe.'), ('Tags et recherche', 'Classez vos notes par tags (réunion, idée, journal, cours…) et retrouvez n’importe quelle phrase en un instant.'), ('Lecteur et partage', 'Réécoutez l’audio en 1x, 1,2x, 1,5x ou 2x, copiez ou partagez la transcription.'), ('Privé par défaut', 'Pas de compte ni de serveur : vos notes restent sur l’iPhone, verrouillables avec Face ID. Un rappel à 9 h pour vos tâches, si vous le souhaitez.')],
+     hl=('La promesse', 'Rien ne quitte votre iPhone.', 'L’audio, les transcriptions et les résumés restent sur l’appareil. Personne chez nous ne peut lire vos notes.', [('6', 'Langues de transcription'), ('0', 'Serveur, compte ou pub'), ('Hors ligne', 'Transcription sur l’iPhone')]),
+     plans=None,
+     faq=[('Dans quelles langues puis-je transcrire ?', 'Français, anglais, allemand, espagnol, italien et portugais. La langue se choisit pour chaque enregistrement.'), ('Ça marche hors ligne ?', 'Oui. La transcription se fait sur l’iPhone avec la reconnaissance vocale d’Apple, une fois le module de la langue téléchargé.'), ('Où sont stockées mes notes ?', 'Uniquement sur votre iPhone, sans compte ni serveur Magic Transcribe. Vous pouvez les exclure de la sauvegarde iCloud et verrouiller l’app avec Face ID.'), ('Comment transcrire un vocal WhatsApp ?', 'Dans WhatsApp, touchez Partager sur le message vocal, puis choisissez Magic Scribe. Bibo le transcrit et le résume.'), ('Comment fonctionne l’abonnement ?', 'Magic Transcribe s’utilise avec l’abonnement Magic Transcribe Pro, mensuel ou annuel, à renouvellement automatique. Le prix est affiché dans l’app avant l’achat, et l’abonnement se résilie dans les réglages de votre identifiant Apple.')],
+     cta='Tes meilleures idées méritent mieux qu’un fichier audio.',
+     disclaimer='Magic Transcribe est une application éditée par SHIP IT. Le résumé intelligent nécessite un iPhone compatible avec Apple Intelligence.',
+     blog_h1='Vous parlez. Bibo écrit et résume.', blog_lead='Notes vocales, réunions et transcription sur iPhone.', blog_title='Blog Magic Transcribe',
+   ),
+   'en': dict(
+     title='Magic Transcribe — turn voice notes and meetings into text on iPhone',
+     desc='Magic Transcribe transcribes your voice notes live on iPhone, even offline, then summarizes them and pulls out the to-dos. Import WhatsApp voice messages and voice memos. No account, nothing leaves your iPhone.',
+     full_name='Magic Transcribe — Voice notes to text', sub='iPhone · iOS 26 or later · EN, FR, DE, ES, IT, PT',
+     h1='You talk. Bibo writes and summarizes.',
+     lead='Magic Transcribe transcribes your voice notes and meetings live on your iPhone, then turns them into a summary, to-dos and chapters. Bibo the beaver handles it all, without sending anything to a server.',
+     price_line='Subscription required · no account · your notes stay on your iPhone',
+     shot_alts=['Bibo, your mascot and voice recorder', 'Home: your notes and the to-dos pulled from them', 'A meeting’s summary and to-dos', 'The transcript split into chapters'],
+     feat_title='Your voice notes, finally put to use.',
+     features=[('Live transcription', 'Tap the red button and talk: the text appears as you speak, even offline, thanks to Apple’s on-device speech recognition.'), ('Summary, to-dos and chapters', 'When you stop, Bibo titles the note, summarizes it, pulls out the to-dos and splits it into chapters, right on the device.'), ('WhatsApp voice messages and voice memos', 'Import your audio files (m4a, mp3, wav, opus…) or share a voice message from WhatsApp or Voice Memos to Magic Scribe.'), ('Tags and search', 'Sort your notes with tags (meeting, idea, journal, class…) and find any sentence in a second.'), ('Player and sharing', 'Play the audio back at 1x, 1.2x, 1.5x or 2x, copy or share the transcript.'), ('Private by default', 'No account, no server: your notes stay on your iPhone and can be locked with Face ID. An optional 9 a.m. reminder for your to-dos.')],
+     hl=('The promise', 'Nothing leaves your iPhone.', 'Audio, transcripts and summaries stay on the device. Nobody on our side can read your notes.', [('6', 'Transcription languages'), ('0', 'Servers, accounts or ads'), ('Offline', 'On-device transcription')]),
+     plans=None,
+     faq=[('Which languages can I transcribe?', 'English, French, German, Spanish, Italian and Portuguese. You pick the language for each recording.'), ('Does it work offline?', 'Yes. Transcription happens on the iPhone with Apple’s speech recognition, once the language module is downloaded.'), ('Where are my notes stored?', 'Only on your iPhone, with no Magic Transcribe account or server. You can exclude them from iCloud backup and lock the app with Face ID.'), ('How do I transcribe a WhatsApp voice message?', 'In WhatsApp, tap Share on the voice message, then choose Magic Scribe. Bibo transcribes and summarizes it.'), ('How does the subscription work?', 'Magic Transcribe requires the Magic Transcribe Pro subscription, monthly or yearly, renewing automatically. The price is shown in the app before purchase, and you can cancel in your Apple ID settings.')],
+     cta='Your best ideas deserve better than an audio file.',
+     disclaimer='Magic Transcribe is an app made by SHIP IT. The smart summary requires an iPhone that supports Apple Intelligence.',
+     blog_h1='You talk. Bibo writes and summarizes.', blog_lead='Voice notes, meetings and transcription on iPhone.', blog_title='Magic Transcribe Blog',
+   ),
+  },
+},
 # ------------------------------------------------------------------ IK (FR uniquement)
 'ik': {
   'name': 'IK', 'langs': ['fr'], 'icon': '/assets/icons/ik.png',

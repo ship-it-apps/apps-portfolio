@@ -20,7 +20,7 @@ from content_posts import POSTS, AUTHOR
 SITE = 'https://apps.shipit.group'
 DEFAULT_LANG = 'en'
 LANGS = ['en', 'fr']
-APP_ORDER = ['zen24', 'scalequest', 'mijo', 'first', 'ik']   # Pip volontairement absente
+APP_ORDER = ['zen24', 'scalequest', 'mijo', 'first', 'magictranscribe', 'ik']   # Pip volontairement absente
 TODAY = datetime.date.today().isoformat()
 
 FROZEN = ['*/support.html', '*/legal/*', 'css/style.css', 'assets/icons/*', 'ik/bareme.json',
@@ -56,16 +56,16 @@ def human_date(d, lang):
     return f'{dd} {MONTHS[lang][m-1]} {y}' if lang == 'fr' else f'{dd} {MONTHS[lang][m-1]} {y}'
 
 HOME = {
- 'en': dict(title='SHIP IT — iOS apps for everyday life', desc='SHIP IT builds focused iPhone apps: Zen24 for Beds24 hosts, Riffo guitar lessons, Mijo meal planner, First Bible verse app and IK mileage allowances.',
+ 'en': dict(title='SHIP IT — iOS apps for everyday life', desc='SHIP IT builds focused iPhone apps: Zen24 for Beds24 hosts, Riffo guitar lessons, Mijo meal planner, First Bible verse app, Magic Transcribe voice notes and IK mileage allowances.',
             label='Independent studio · iOS apps', h1='Apps that do one thing. Really well.',
-            lead='Run your Beds24 rentals, learn guitar scales, plan the week’s dinners, read a Bible verse before your apps, claim your mileage. iPhone apps, each built for a single job.',
+            lead='Run your Beds24 rentals, learn guitar scales, plan the week’s dinners, read a Bible verse before your apps, turn voice notes into text, claim your mileage. iPhone apps, each built for a single job.',
             cta1='See our apps', cta2='Read the journal', apps_t='Our apps', apps_meta='iPhone · iOS 18 or later',
             journal_eyebrow='The journal', journal_t='Guides, comparisons, alternatives', journal_lead='Every app has its own blog. The latest articles, across all apps.',
             studio_eyebrow='The studio', studio_t='Small apps, big attention to detail.',
             principles=[('One job, one app', 'No catch-all suite: each app solves one specific problem, from the first screen to the last.'), ('Made for iPhone', 'Built for iOS 18 and later, with the gestures and conventions you already know.'), ('A human replies', 'A question, a bug, an idea: write to contact@shipit.group — we read every message.')]),
- 'fr': dict(title='SHIP IT — Apps iOS pour le quotidien', desc='SHIP IT conçoit des apps iPhone utiles : Zen24 pour les hôtes Beds24, Riffo pour apprendre la guitare, Mijo pour les menus de la semaine, First pour lire un verset avant ses apps et IK pour les indemnités kilométriques.',
+ 'fr': dict(title='SHIP IT — Apps iOS pour le quotidien', desc='SHIP IT conçoit des apps iPhone utiles : Zen24 pour les hôtes Beds24, Riffo pour apprendre la guitare, Mijo pour les menus de la semaine, First pour lire un verset avant ses apps, Magic Transcribe pour transcrire ses notes vocales et IK pour les indemnités kilométriques.',
             label='Studio indépendant · apps iOS', h1='Des apps qui font une chose. Très bien.',
-            lead='Gérer ses locations Beds24, apprendre ses gammes, planifier les dîners, lire un verset avant ses apps, déclarer ses kilomètres. Des apps iPhone pensées chacune pour un seul usage.',
+            lead='Gérer ses locations Beds24, apprendre ses gammes, planifier les dîners, lire un verset avant ses apps, transcrire ses notes vocales, déclarer ses kilomètres. Des apps iPhone pensées chacune pour un seul usage.',
             cta1='Voir nos apps', cta2='Lire le journal', apps_t='Nos apps', apps_meta='iPhone · iOS 18 et plus',
             journal_eyebrow='Le journal', journal_t='Guides, comparatifs, alternatives', journal_lead='Chaque app a son propre blog. Les derniers articles, toutes apps confondues.',
             studio_eyebrow='Le studio', studio_t='Petites apps, grand soin du détail.',
@@ -76,11 +76,13 @@ HOME_APPS = {
         'scalequest': ('Music · Learning', 'Learn guitar step by step: you play, the app listens.', 'Subscription · 7-day trial', '3 languages'),
         'mijo': ('Food · Meal planning', 'The week’s dinners and the grocery list, ready in 30 seconds.', 'Free · Subscription', '5 languages'),
         'first': ('Faith · Screen time', 'A Bible verse before your apps: they stay locked until you read it.', 'Subscription · 3-day trial', '5 languages'),
+        'magictranscribe': ('Productivity · Voice notes', 'Talk, the text writes itself live: summary and to-dos in seconds, all on your iPhone.', 'Subscription', '6 languages'),
         'ik': ('Finance · French tax', 'Business trips tracked by GPS and computed with the official French mileage scale.', 'Free · Subscription', 'French')},
  'fr': {'zen24': ('Gestion locative · Beds24', 'Arrivées, calendrier, messages et KPI de vos propriétés Beds24, dans votre poche.', 'Gratuit · Premium', '5 langues'),
         'scalequest': ('Musique · Apprentissage', 'Apprenez la guitare pas à pas : vous jouez, l’app écoute.', 'Abonnement · essai 7 jours', '3 langues'),
         'mijo': ('Cuisine · Menus de la semaine', 'Les dîners de la semaine et la liste de courses, prêts en 30 secondes.', 'Gratuit · Abonnement', '5 langues'),
         'first': ('Foi · Temps d’écran', 'Un verset de la Bible avant vos apps : elles restent verrouillées jusqu’à la lecture.', 'Abonnement · essai 3 jours', '5 langues'),
+        'magictranscribe': ('Productivité · Notes vocales', 'Vous parlez, le texte s’écrit en direct : résumé et tâches en quelques secondes, sur votre iPhone.', 'Abonnement', '6 langues'),
         'ik': ('Finances · Frais réels', 'Vos trajets pros suivis au GPS et calculés au barème officiel, export PDF compris.', 'Gratuit · Abonnement', 'Français')},
 }
 CARD_ART = {'zen24-vs': 'vs', 'zen24-alt': 'alt.', 'sq-pentatonique': '5×', 'mijo-menu': '30 s', 'ik-bareme': 'km'}
@@ -374,7 +376,7 @@ def page_app(app, lang):
     path = u_app(app, lang)
     items = [(t['home'], u_home(lang)), (a['name'], path)]
     offers = [{'@type': 'Offer', 'price': p, 'priceCurrency': cur} for p, cur in a['offers']]
-    ld = [{'@context': 'https://schema.org', '@type': 'MobileApplication', 'name': x['full_name'], 'operatingSystem': 'iOS 18.0', 'applicationCategory': a['category'],
+    ld = [{'@context': 'https://schema.org', '@type': 'MobileApplication', 'name': x['full_name'], 'operatingSystem': a.get('os', 'iOS 18.0'), 'applicationCategory': a['category'],
            'description': x['desc'], 'url': abs_(path), 'downloadUrl': a['store'][lang], 'image': abs_(a['icon']), 'inLanguage': lang, 'offers': offers if len(offers) > 1 else offers[0], 'publisher': ORG},
           ld_breadcrumbs(items), ld_faq(x['faq'])]
     og = og_image(f'{app}-{lang}', x['h1'], x['full_name'], c, a['icon'])
