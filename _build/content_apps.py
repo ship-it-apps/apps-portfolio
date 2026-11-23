@@ -108,9 +108,9 @@ APPS = {
   'store': {'en': 'https://apps.apple.com/app/id6820227149', 'fr': 'https://apps.apple.com/fr/app/id6820227149'},
   'category': 'LifestyleApplication', 'offers': [('0', 'EUR')],
   'colors': dict(strong='#C4502F', bright='#F6C343', tint='#F4E9DD', wash='#FBF7F1', deep='#2F3A33', ondark='#F6C343', mutedd='#CBD5CD', bord='#46534A', panel='linear-gradient(160deg,#D05C38,#B8462A)', inktint='#6B2A15'),
-  'shots': ['01-hero', '02-semaine', '03-courses', '04-des', '05-cuisine'],
+  'shots': ['01-hero', '02-semaine', '03-deux', '04-des', '05-cuisine', '06-famille', '07-courses', '08-rappel'],
   'shot_prefix': 'mijo_', 'hero_shot': '02-semaine', 'video': None,
-  'shot_lang_fallback': 'fr',  # TODO: captures anglaises de Yamzi non disponibles
+  'shot_lang_fallback': 'fr',
   'i18n': {
    'fr': dict(
      title='Yamzi — menus de la semaine et liste de courses en 30 secondes',
@@ -119,7 +119,7 @@ APPS = {
      h1='Fini le casse-tête du dîner.',
      lead='Yamzi prépare vos dîners de la semaine et la liste de courses qui va avec, en 30 secondes. Des plats de 15 à 25 minutes, adaptés à toute la famille.',
      price_line='Gratuit au téléchargement · abonnement annuel ou mensuel · sans compte, sans pub',
-     shot_alts=['Fini le casse-tête du dîner', 'La semaine de dîners prête en 30 secondes', 'Liste de courses rangée par rayon', 'Changer un plat d’un coup de dés', 'Mode cuisine pas à pas'],
+     shot_alts=['On mange quoi ce soir ? Yamzi choisit les dîners de toute la semaine', 'Tous tes dîners de la semaine, prêts en 30 secondes', 'Le dîner se décide à deux, en un message', 'Changer un plat : healthy, végétarien, réconfort ou au hasard', 'Les recettes étape par étape, avec minuteur', 'Sans porc, sans gluten : allergies, goûts et portions pris en compte', 'Ta liste de courses rangée par rayon, déjà estimée', 'Un rappel à 17 h 30 : ce soir, plus de prise de tête'],
      feat_title='Une semaine de dîners, sans y penser.',
      features=[('Adaptée à votre famille', 'Les quantités s’ajustent au nombre de personnes ; un enfant compte pour une demi-portion.'), ('Jamais ce que vous ne mangez pas', 'Porc, gluten, arachides, coriandre… ce que vous excluez n’apparaît jamais, même en remplacement.'), ('Change un plat d’un geste', 'Trois idées pour le remplacer, ou laissez Yamzi tirer au sort avec ses dés.'), ('Une seule liste de courses', 'Tous les ingrédients additionnés, arrondis au paquet et rangés par rayon. À cocher et partager.'), ('Mode cuisine', 'Une étape à la fois, en gros caractères, avec minuteur. L’écran reste allumé.'), ('Yamzi te fait signe', 'Le plat du soir à 17 h 30, la liste le samedi, la semaine suivante le dimanche.')],
      hl=('La promesse', 'Le dîner, réglé en 30 secondes.', 'Moins de charge mentale, sans compte ni publicité : vos préférences restent sur votre iPhone.', [('30 s', 'Pour planifier la semaine'), ('15–25', 'Minutes par plat'), ('0', 'Compte, pub ou traceur')]),
@@ -136,7 +136,7 @@ APPS = {
      h1='No more “what’s for dinner?”',
      lead='Yamzi plans your dinners for the week and the grocery list that goes with them, in 30 seconds. Easy 15–25 minute meals that suit the whole family.',
      price_line='Free download · yearly or monthly subscription · no account, no ads',
-     shot_alts=['No more dinner headaches', 'Your week of dinners ready in 30 seconds', 'Grocery list sorted by aisle', 'Swap a dish with a roll of the dice', 'Step-by-step cooking mode'],
+     shot_alts=['What’s for dinner tonight? Yamzi plans your dinners for the whole week', 'All your dinners for the week, ready in 30 seconds', 'Settle dinner together in just one message', 'Swap a dish: healthy, veggie, comfort or at random', 'Step-by-step recipes with a built-in timer', 'No pork, no gluten: allergies, tastes and portions taken into account', 'Your grocery list sorted by aisle', 'A quick note at 5:30 pm: tonight, no more dinner stress'],
      feat_title='A week of dinners, without the thinking.',
      features=[('Fits your family', 'Portions adjust to how many people eat at home; a child counts as half a portion.'), ('Never what you don’t eat', 'Pork, gluten, peanuts, coriander… anything you exclude never shows up, not even as a swap.'), ('Swap a dish in one tap', 'Three ideas to replace it, or let Yamzi roll the dice.'), ('One grocery list', 'Every ingredient added up, rounded to the pack and sorted by aisle. Tick it off and share it.'), ('Cooking mode', 'One step at a time, in large type, with a timer. The screen stays on.'), ('Friendly reminders', 'Tonight’s dish at 5:30 pm, the list on Saturday, next week’s plan on Sunday.')],
      hl=('The promise', 'Dinner, sorted in 30 seconds.', 'Less mental load, no account and no ads: your preferences stay on your iPhone.', [('30 s', 'To plan the week'), ('15–25', 'Minutes per dish'), ('0', 'Accounts, ads or trackers')]),
